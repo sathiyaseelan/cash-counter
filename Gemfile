@@ -29,12 +29,32 @@ gem 'jbuilder', '~> 2.5'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
+gem 'devise'
+gem 'twitter-bootstrap-rails'
+gem 'devise-bootstrap-views'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platform: :mri
-  gem 'rspec-rails'
+  gem 'rspec-rails', '~>3.0'
+  gem 'pry-rails'
+  # For testing view methods and controllers
   gem 'rails-controller-testing'
+
+end
+
+group :test do
+  # For cleaning the test database
+  gem 'database_cleaner'
+  # For writing Feature tests
+  gem 'capybara'
+  # For creating objects conviniently than fixtures
+  gem 'factory_girl_rails'
+  # For creating fake names, emails etc
+  gem 'faker'
+  # To save and open the failed pages
+  gem 'capybara-screenshot'
+  # gem 'launchy'
 end
 
 group :development do
@@ -44,6 +64,8 @@ group :development do
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
+  # To annotate the model, spec and factory classes with schema information
+  gem 'annotate'
 end
 
 group :production do

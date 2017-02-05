@@ -14,4 +14,4 @@ This is to keep track the expenses; categorize and calculate the share for every
 
 * Test driven development
 
-* Scheule & Mail Integration
+* Schedule & Mail Integration
