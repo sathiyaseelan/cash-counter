@@ -19,7 +19,5 @@ FactoryGirl.define do
     mobile Faker::Number.number(10)
     email Faker::Internet.email
     password Faker::Internet.password
-    password_confirmation {password}
-    
   end
 end
