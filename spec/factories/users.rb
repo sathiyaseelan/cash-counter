@@ -12,17 +12,14 @@
 #  updated_at      :datetime         not null
 #
 
-class User < ApplicationRecord
-
-  has_secure_password
-
-  has_and_belongs_to_many :groups
-
-  validates :email, uniqueness: true, presence: true
-  validates :mobile, uniqueness: true, presence: true
-
-  def administering_groups
-    Group.find_by({admin_id: self.id})
+FactoryGirl.define do
+  factory :user do
+    first_name Faker::Name.first_name
+    last_name Faker::Name.last_name
+    mobile Faker::Number.number(10)
+    email Faker::Internet.email
+    password Faker::Internet.password
+    password_confirmation {password}
+    
   end
-
 end
