@@ -4,8 +4,6 @@ RSpec.describe 'User Signup request', type: :request do
 
   context 'public request with valid attributes' do
     it 'allow user to sign up' do
-      byebug
-      byebug
       user_attributes = attributes_for :user
       user_params = build_json_for attributes: user_attributes, root: :user
       post_json url: users_path, params: user_params
@@ -24,7 +22,6 @@ RSpec.describe 'User Signup request', type: :request do
       user_params = build_json_for attributes: user_attributes, root: :user
       post_json url: users_path, params: user_params
       expect(response.status).to eq 422
-      byebug
       expect(response_value('success')).to eq false
       expect(response_value('data','email')).to eq user_attributes[:email]
 
