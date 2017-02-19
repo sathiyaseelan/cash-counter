@@ -2,17 +2,28 @@
 module ServiceTestExtensions
 
   # To build json for the factory and merge additional hash if any
-  def build_json_for(factory:, root:, additional_data: {})
-    {root => attributes_for(factory)}.merge(additional_data).to_json
+  def build_json_for(factory: nil, attributes: nil, root:, additional_data: {})
+    if factory
+      {root => attributes_for(factory)}.merge(additional_data).to_json
+    elsif attributes
+      {root => attributes}.merge(additional_data).to_json
+    else
+      raise 'Argument error, factory or attributes must be present'
+    end
   end
+
 
   def json_for(record,additional_data: {})
     record.attributes.merge(additional_data).to_json
   end
 
   # To parse the json and retrieve the value
-  def response_value(key)
-    JSON.parse(response.body)[key.to_s]
+  def response_value(*keys)
+    json = JSON.parse(response.body)
+    keys.each do |key|
+      json = json[key.to_s]
+    end
+    json
   end
 
   # to send post request with content type as json
