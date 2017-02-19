@@ -4,10 +4,10 @@ class Response
 
   attr_accessor :success, :entity, :token
 
-  def initialize(entity, options= {})
+  def initialize(entity, success: true, token: nil)
     @entity = entity
-    @success = options[:success]
-    @token = options[:token]
+    @success = success
+    @token = token
   end
 
   def success?

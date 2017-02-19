@@ -27,6 +27,7 @@ gem 'jbuilder', '~> 2.5'
 gem 'redis', '~> 3.0'
 gem 'redis-namespace'
 gem 'redis-rails'
+gem 'jwt'
 # Use ActiveModel has_secure_password
 gem 'bcrypt', '~> 3.1.7'
 
@@ -35,6 +36,8 @@ gem 'bcrypt', '~> 3.1.7'
 #gem 'devise'
 #gem 'twitter-bootstrap-rails'
 #gem 'devise-bootstrap-views'
+
+
 
 group :development, :test do
   # Use sqlite3 as the database for Active Record

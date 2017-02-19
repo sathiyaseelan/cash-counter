@@ -1,10 +1,9 @@
 class ErrorResponse < Response
-  attr_accessor :messages
+  attr_accessor :error
 
-  def initialize(messages)
-    @messages = messages
+  def initialize(error)
+    @error = error
     @success = false
-    #@object = nil
   end
 
 end

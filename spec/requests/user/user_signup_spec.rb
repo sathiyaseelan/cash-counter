@@ -10,7 +10,7 @@ RSpec.describe 'User Signup request', type: :request do
       expect(response.status).to eq 201
       expect(response_value('success')).to eq true
       expect(response_value('data','email')).to eq user_attributes[:email]
-    #  expect(response_value('data','token')).not_to eq nil
+      expect(response_value('token')).not_to eq nil
     end
   end
 
@@ -23,8 +23,8 @@ RSpec.describe 'User Signup request', type: :request do
       post_json url: users_path, params: user_params
       expect(response.status).to eq 422
       expect(response_value('success')).to eq false
-      expect(response_value('data','email')).to eq user_attributes[:email]
-
+      expect(response_value('messages','email')).to include 'has already been taken'
+      expect(response_value('messages','mobile')).to include 'has already been taken'
     end
   end
 end
