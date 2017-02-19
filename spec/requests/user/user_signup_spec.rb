@@ -1,9 +1,10 @@
-require 'rails_helper'
+  require 'rails_helper'
 
 RSpec.describe 'User Signup request', type: :request do
 
   context 'public request with valid attributes' do
     it 'allow user to sign up' do
+      byebug
       user_attributes = attributes_for :user
       user_params = build_json_for attributes: user_attributes, root: :user
       post_json url: users_path, params: user_params
