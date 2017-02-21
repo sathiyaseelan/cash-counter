@@ -6,7 +6,7 @@ class AuthenticationController < ApplicationController
     if user && user.authenticate(params[:password])
       hash = {success: true}
       hash = hash.merge payload(user)
-      render json:  hash
+      render json: hash
     else
       render json: {success: false, errors: ['Invalid Username/Password']}, status: :unauthorized
     end

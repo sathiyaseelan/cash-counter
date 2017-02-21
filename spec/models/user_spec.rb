@@ -10,6 +10,7 @@
 #  password_digest :string           default(""), not null
 #  created_at      :datetime         not null
 #  updated_at      :datetime         not null
+#  role            :string           default("user")
 #
 
 require 'rails_helper'

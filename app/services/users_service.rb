@@ -22,7 +22,7 @@ class UsersService < ApplicationService
       @token = create_token(@user)
       return Response.new(nil, success:true, token: @token)
     else
-      return FailureResponse.new('Invalid email / password')
+      return FailureResponse.new(['Invalid email / password'])
     end
   end
 end

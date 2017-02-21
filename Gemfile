@@ -48,7 +48,7 @@ group :development, :test do
   gem 'pry-rails'
   # For testing view methods and controllers
   gem 'rails-controller-testing'
-
+  gem 'rspec_api_documentation'
 end
 
 group :test do
