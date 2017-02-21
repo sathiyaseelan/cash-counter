@@ -45,6 +45,10 @@ GEM
     annotate (2.6.5)
       activerecord (>= 2.3.0)
       rake (>= 0.8.7)
+    apitome (0.1.0)
+      kramdown
+      railties
+      rspec_api_documentation
     arel (7.1.4)
     bcrypt (3.1.11)
     builder (3.2.2)
@@ -92,6 +96,7 @@ GEM
       railties (>= 4.2.0)
       thor (>= 0.14, < 2.0)
     jwt (1.5.4)
+    kramdown (1.13.2)
     launchy (2.4.3)
       addressable (~> 2.3)
     libv8 (3.16.14.17)
@@ -257,6 +262,7 @@ PLATFORMS
 DEPENDENCIES
   active_model_serializers (~> 0.9.4)
   annotate
+  apitome
   bcrypt (~> 3.1.7)
   byebug
   capybara

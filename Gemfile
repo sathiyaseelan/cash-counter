@@ -30,7 +30,7 @@ gem 'redis-rails'
 gem 'jwt'
 # Use ActiveModel has_secure_password
 gem 'bcrypt', '~> 3.1.7'
-
+gem "apitome"
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 #gem 'devise'

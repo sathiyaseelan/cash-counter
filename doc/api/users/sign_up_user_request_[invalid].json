@@ -1,0 +1,75 @@
+{
+  "resource": "Users",
+  "resource_explanation": null,
+  "http_method": "POST",
+  "route": "api/v1/users",
+  "description": "Sign up user request [invalid]",
+  "explanation": "Signup request for the existing user",
+  "parameters": [
+    {
+      "scope": "user",
+      "required": true,
+      "name": "first_name",
+      "description": "First name of user"
+    },
+    {
+      "scope": "user",
+      "required": true,
+      "name": "last_name",
+      "description": "Last name of user"
+    },
+    {
+      "scope": "user",
+      "required": true,
+      "name": "email",
+      "description": "email id of user"
+    },
+    {
+      "scope": "user",
+      "required": true,
+      "name": "mobile",
+      "description": "email id of user"
+    },
+    {
+      "scope": "user",
+      "required": true,
+      "name": "password",
+      "description": "password for user"
+    }
+  ],
+  "response_fields": [
+
+  ],
+  "requests": [
+    {
+      "request_method": "POST",
+      "request_path": "api/v1/users",
+      "request_body": "{\"user\":{\"first_name\":\"Benny\",\"last_name\":\"Schuppe\",\"email\":\"paxton@kerluke.io\",\"mobile\":\"8780442334\",\"password\":\"OaSlIuWq321vT2D2\"}}",
+      "request_headers": {
+        "Content-Type": "application/json",
+        "Host": "example.org",
+        "Cookie": ""
+      },
+      "request_query_parameters": {
+      },
+      "request_content_type": "application/json",
+      "response_status": 422,
+      "response_status_text": "Unprocessable Entity",
+      "response_body": "{\n  \"success\": false,\n  \"messages\": [\n    \"email:has already been taken\",\n    \"mobile:has already been taken\"\n  ]\n}",
+      "response_headers": {
+        "X-Frame-Options": "SAMEORIGIN",
+        "X-XSS-Protection": "1; mode=block",
+        "X-Content-Type-Options": "nosniff",
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE, OPTIONS",
+        "Content-Type": "application/json; charset=utf-8",
+        "Cache-Control": "no-cache",
+        "X-Request-Id": "08f4bf06-8e2f-440f-8d59-7a984acb01e1",
+        "X-Runtime": "0.008853",
+        "Content-Length": "93"
+      },
+      "response_content_type": "application/json; charset=utf-8",
+      "curl": null
+    }
+  ]
+}

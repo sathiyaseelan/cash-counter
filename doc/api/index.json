@@ -1,0 +1,31 @@
+{
+  "resources": [
+    {
+      "name": "Users",
+      "explanation": null,
+      "examples": [
+        {
+          "description": "Generate authentication token request",
+          "link": "users/generate_authentication_token_request.json",
+          "groups": "all",
+          "route": "/api/v1/user/signin",
+          "method": "post"
+        },
+        {
+          "description": "Sign up user request [invalid]",
+          "link": "users/sign_up_user_request_[invalid].json",
+          "groups": "all",
+          "route": "api/v1/users",
+          "method": "post"
+        },
+        {
+          "description": "Sign up user request [valid]",
+          "link": "users/sign_up_user_request_[valid].json",
+          "groups": "all",
+          "route": "api/v1/users",
+          "method": "post"
+        }
+      ]
+    }
+  ]
+}

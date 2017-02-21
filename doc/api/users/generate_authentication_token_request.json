@@ -1,0 +1,58 @@
+{
+  "resource": "Users",
+  "resource_explanation": null,
+  "http_method": "POST",
+  "route": "/api/v1/user/signin",
+  "description": "Generate authentication token request",
+  "explanation": "Sign in and generate token with email and password",
+  "parameters": [
+    {
+      "scope": "user",
+      "required": true,
+      "name": "email",
+      "description": "email id of the registered user"
+    },
+    {
+      "scope": "user",
+      "required": true,
+      "name": "password",
+      "description": "password of the user"
+    }
+  ],
+  "response_fields": [
+
+  ],
+  "requests": [
+    {
+      "request_method": "POST",
+      "request_path": "/api/v1/user/signin",
+      "request_body": "{\"user\":{\"email\":\"test@example.com\",\"password\":\"password123\"}}",
+      "request_headers": {
+        "Content-Type": "application/json",
+        "Host": "example.org",
+        "Cookie": ""
+      },
+      "request_query_parameters": {
+      },
+      "request_content_type": "application/json",
+      "response_status": 200,
+      "response_status_text": "OK",
+      "response_body": "{\n  \"success\": true,\n  \"data\": null,\n  \"token\": \"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoiMSIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNDg3NzExMjk1LCJleHAiOjE0ODc3MjU2OTV9.AKGatYMTDT8eB5ESyPtH9AGGoHrf94WRYoz_G1MRT3c\"\n}",
+      "response_headers": {
+        "X-Frame-Options": "SAMEORIGIN",
+        "X-XSS-Protection": "1; mode=block",
+        "X-Content-Type-Options": "nosniff",
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE, OPTIONS",
+        "Content-Type": "application/json; charset=utf-8",
+        "ETag": "W/\"11bfbd5cfd4c10aad299d131449cbbee\"",
+        "Cache-Control": "max-age=0, private, must-revalidate",
+        "X-Request-Id": "7fa4093c-9204-42b6-9b1c-cebb73b32edd",
+        "X-Runtime": "0.008233",
+        "Content-Length": "204"
+      },
+      "response_content_type": "application/json; charset=utf-8",
+      "curl": null
+    }
+  ]
+}
