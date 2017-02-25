@@ -17,7 +17,8 @@ class User < ApplicationRecord
 
   has_secure_password
 
-  has_and_belongs_to_many :groups
+  has_many :members
+  has_many :groups, through: :members
 
   validates :email, uniqueness: true, presence: true
   validates :mobile, uniqueness: true, presence: true
