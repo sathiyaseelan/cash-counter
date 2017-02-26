@@ -37,7 +37,7 @@
       "request_content_type": "application/json",
       "response_status": 200,
       "response_status_text": "OK",
-      "response_body": "{\n  \"success\": true,\n  \"data\": null,\n  \"token\": \"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoiMSIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNDg3NzExMjk1LCJleHAiOjE0ODc3MjU2OTV9.AKGatYMTDT8eB5ESyPtH9AGGoHrf94WRYoz_G1MRT3c\"\n}",
+      "response_body": "{\n  \"success\": true,\n  \"data\": null,\n  \"token\": \"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoiMSIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNDg4MTM0ODE2LCJleHAiOjE0ODgxNDkyMTZ9.IkF-uS2m4-sgK0AzM-5uBbUBOzNKH-gsk0AP0MVCBpA\"\n}",
       "response_headers": {
         "X-Frame-Options": "SAMEORIGIN",
         "X-XSS-Protection": "1; mode=block",
@@ -45,10 +45,10 @@
         "Access-Control-Allow-Origin": "*",
         "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE, OPTIONS",
         "Content-Type": "application/json; charset=utf-8",
-        "ETag": "W/\"11bfbd5cfd4c10aad299d131449cbbee\"",
+        "ETag": "W/\"abe11bd73af28926ef86660d72131533\"",
         "Cache-Control": "max-age=0, private, must-revalidate",
-        "X-Request-Id": "7fa4093c-9204-42b6-9b1c-cebb73b32edd",
-        "X-Runtime": "0.008233",
+        "X-Request-Id": "76d0d024-6171-4c07-9f1a-dc3d1a3c39fe",
+        "X-Runtime": "0.005299",
         "Content-Length": "204"
       },
       "response_content_type": "application/json; charset=utf-8",

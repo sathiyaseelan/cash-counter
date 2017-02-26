@@ -44,7 +44,7 @@
     {
       "request_method": "POST",
       "request_path": "api/v1/users",
-      "request_body": "{\"user\":{\"first_name\":\"Lina\",\"last_name\":\"Cummings\",\"email\":\"dayton.lemke@reinger.info\",\"mobile\":\"5992518869\",\"password\":\"2n5hDeZwZ2XoVu9m\"}}",
+      "request_body": "{\"user\":{\"first_name\":\"Jamel\",\"last_name\":\"Torphy\",\"email\":\"lilliana@wehner.biz\",\"mobile\":\"2536964731\",\"password\":\"Zr756l3lUm\"}}",
       "request_headers": {
         "Content-Type": "application/json",
         "Host": "example.org",
@@ -55,7 +55,7 @@
       "request_content_type": "application/json",
       "response_status": 201,
       "response_status_text": "Created",
-      "response_body": "{\n  \"success\": true,\n  \"data\": {\n    \"id\": 1,\n    \"first_name\": \"Lina\",\n    \"last_name\": \"Cummings\",\n    \"email\": \"dayton.lemke@reinger.info\"\n  },\n  \"token\": \"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoiMSIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNDg3NzExMjk1LCJleHAiOjE0ODc3MjU2OTV9.AKGatYMTDT8eB5ESyPtH9AGGoHrf94WRYoz_G1MRT3c\"\n}",
+      "response_body": "{\n  \"success\": true,\n  \"data\": {\n    \"id\": 1,\n    \"first_name\": \"Jamel\",\n    \"last_name\": \"Torphy\",\n    \"email\": \"lilliana@wehner.biz\",\n    \"full_name\": \"Jamel Torphy\",\n    \"mobile\": \"2536964731\"\n  },\n  \"token\": \"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoiMSIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNDg4MTM0ODE2LCJleHAiOjE0ODgxNDkyMTZ9.IkF-uS2m4-sgK0AzM-5uBbUBOzNKH-gsk0AP0MVCBpA\"\n}",
       "response_headers": {
         "X-Frame-Options": "SAMEORIGIN",
         "X-XSS-Protection": "1; mode=block",
@@ -63,11 +63,11 @@
         "Access-Control-Allow-Origin": "*",
         "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE, OPTIONS",
         "Content-Type": "application/json; charset=utf-8",
-        "ETag": "W/\"ed42b90809c8af39ba44619acff9291d\"",
+        "ETag": "W/\"5963a5a0328da6d5049e4214903954ac\"",
         "Cache-Control": "max-age=0, private, must-revalidate",
-        "X-Request-Id": "fb945dda-a870-4e04-89c5-ef2eb1854cce",
-        "X-Runtime": "0.039386",
-        "Content-Length": "287"
+        "X-Request-Id": "0b57741f-e7d8-4558-b292-38adac982493",
+        "X-Runtime": "0.009748",
+        "Content-Length": "329"
       },
       "response_content_type": "application/json; charset=utf-8",
       "curl": null

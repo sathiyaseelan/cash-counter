@@ -1,0 +1,59 @@
+{
+  "resource": "Groups",
+  "resource_explanation": null,
+  "http_method": "POST",
+  "route": "api/v1/groups",
+  "description": "Create a new group [valid]",
+  "explanation": "Create a new Group",
+  "parameters": [
+    {
+      "scope": "group",
+      "required": true,
+      "name": "name",
+      "description": "Name of the group"
+    },
+    {
+      "scope": "group",
+      "required": true,
+      "name": "description",
+      "description": "Description for the group"
+    }
+  ],
+  "response_fields": [
+
+  ],
+  "requests": [
+    {
+      "request_method": "POST",
+      "request_path": "api/v1/groups",
+      "request_body": "{\"group\":{\"name\":\"Ohio gooses\",\"description\":\"Placeat qui dolor occaecati est velit.\"}}",
+      "request_headers": {
+        "Content-Type": "application/json",
+        "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoiMSIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNDg4MTM0ODE2LCJleHAiOjE0ODgxNDkyMTZ9.IkF-uS2m4-sgK0AzM-5uBbUBOzNKH-gsk0AP0MVCBpA",
+        "Host": "example.org",
+        "Cookie": ""
+      },
+      "request_query_parameters": {
+      },
+      "request_content_type": "application/json",
+      "response_status": 201,
+      "response_status_text": "Created",
+      "response_body": "{\n  \"success\": true,\n  \"data\": {\n    \"id\": 1,\n    \"name\": \"Ohio gooses\",\n    \"description\": \"Placeat qui dolor occaecati est velit.\",\n    \"members\": [\n\n    ],\n    \"admins\": [\n      {\n        \"id\": 1,\n        \"role\": \"admin\",\n        \"email\": \"test@example.com\",\n        \"full_name\": \"Jermey, Eichmann\"\n      }\n    ]\n  }\n}",
+      "response_headers": {
+        "X-Frame-Options": "SAMEORIGIN",
+        "X-XSS-Protection": "1; mode=block",
+        "X-Content-Type-Options": "nosniff",
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE, OPTIONS",
+        "Content-Type": "application/json; charset=utf-8",
+        "ETag": "W/\"5c0a1f3adce86481911280e1a97faf04\"",
+        "Cache-Control": "max-age=0, private, must-revalidate",
+        "X-Request-Id": "3e5bec34-1540-47e0-9e37-428a13d24fa3",
+        "X-Runtime": "0.040441",
+        "Content-Length": "214"
+      },
+      "response_content_type": "application/json; charset=utf-8",
+      "curl": null
+    }
+  ]
+}

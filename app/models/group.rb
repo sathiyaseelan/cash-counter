@@ -12,4 +12,12 @@
 class Group < ApplicationRecord
   has_many :members
   has_many :users, through: :members
+
+  def only_members
+    members.only_members
+  end
+
+  def admins
+    members.admins
+  end
 end

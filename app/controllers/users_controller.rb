@@ -24,6 +24,16 @@ class UsersController < ApplicationController
       render json: ErrorResponse.new(e.message), status: :internal_server_error
   end
 
+  def show
+    response = UsersService.new.find_user user_id: params[:id]
+    if response.success?
+      render json: response, status: :ok
+    else
+      render json: response, status: :not_found
+    end
+    rescue Exception => e
+      render json: ErrorResponse.new(e.message), status: :internal_server_error
+  end
   private
 
   def user_params

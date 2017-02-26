@@ -1,6 +1,26 @@
 {
   "resources": [
     {
+      "name": "Groups",
+      "explanation": null,
+      "examples": [
+        {
+          "description": "Create a new group [valid]",
+          "link": "groups/create_a_new_group_[valid].json",
+          "groups": "all",
+          "route": "api/v1/groups",
+          "method": "post"
+        },
+        {
+          "description": "Get Group information",
+          "link": "groups/get_group_information.json",
+          "groups": "all",
+          "route": "api/v1/groups/:id",
+          "method": "get"
+        }
+      ]
+    },
+    {
       "name": "Users",
       "explanation": null,
       "examples": [
@@ -24,6 +44,13 @@
           "groups": "all",
           "route": "api/v1/users",
           "method": "post"
+        },
+        {
+          "description": "To get user details",
+          "link": "users/to_get_user_details.json",
+          "groups": "all",
+          "route": "api/v1/users/:id",
+          "method": "get"
         }
       ]
     }

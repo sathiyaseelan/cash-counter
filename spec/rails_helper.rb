@@ -32,6 +32,7 @@ RSpec.configure do |config|
 
   config.include CapybaraExtensions, type: :feature
   config.include ServiceTestExtensions, type: :request
+  config.include AcceptanceHelper, type: :acceptance
   # Remove this line if you're not using ActiveRecord or ActiveRecord fixtures
   config.fixture_path = "#{::Rails.root}/spec/fixtures"
 

@@ -3,12 +3,25 @@ class GroupsController < ApplicationController
   end
 
   def create
-    @group = Group.new(group_params)
-    if @group.valid? && @group.save
-      render json: { success: true, message: 'group is created successfully', group_id: @group.id}, status: 200
+    response = GroupsService.new.create_group group_params.merge({user: current_user})
+    if response.success?
+      render json: response, status: :created
     else
-      render json: { success: false, message: @group.errors.full_messages }, status: 400
+      render json: response, status: :unprocessable_entity
     end
+    rescue Exception => e
+      render json: ErrorResponse.new(e.message), status: :internal_server_error
+  end
+
+  def show
+    response = GroupsService.new.find_group params[:id]
+    if response.success?
+      render json: response, status: :ok
+    else
+      render json: response, status: :not_found
+    end
+    rescue Exception => e
+      render json: ErrorResponse.new(e.message), status: :internal_server_error
   end
 
   def add_member
@@ -17,7 +30,7 @@ class GroupsController < ApplicationController
   private
 
   def group_params
-    params.require(:group).permit(:name,:description,:admin_id)
+    convert_keys_to_symbols params.require(:group).permit(:name,:description).to_h
   end
 
   def member_params

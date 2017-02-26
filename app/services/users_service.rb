@@ -25,4 +25,13 @@ class UsersService < ApplicationService
       return FailureResponse.new(['Invalid email / password'])
     end
   end
+
+  def find_user(user_id:)
+    @user = User.find_by(id: user_id)
+    if @user
+      return Response.new(@user, success: true)
+    else
+      return FailureResponse.new(["Can not find the user with the id given"])
+    end
+  end
 end

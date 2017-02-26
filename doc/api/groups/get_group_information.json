@@ -1,0 +1,48 @@
+{
+  "resource": "Groups",
+  "resource_explanation": null,
+  "http_method": "GET",
+  "route": "api/v1/groups/:id",
+  "description": "Get Group information",
+  "explanation": "To get the complete information about the group",
+  "parameters": [
+
+  ],
+  "response_fields": [
+
+  ],
+  "requests": [
+    {
+      "request_method": "GET",
+      "request_path": "api/v1/groups/1",
+      "request_body": null,
+      "request_headers": {
+        "Content-Type": "application/json",
+        "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoiMSIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNDg4MTM0ODE2LCJleHAiOjE0ODgxNDkyMTZ9.IkF-uS2m4-sgK0AzM-5uBbUBOzNKH-gsk0AP0MVCBpA",
+        "Host": "example.org",
+        "Cookie": ""
+      },
+      "request_query_parameters": {
+      },
+      "request_content_type": "application/json",
+      "response_status": 200,
+      "response_status_text": "OK",
+      "response_body": "{\n  \"success\": true,\n  \"data\": {\n    \"id\": 1,\n    \"name\": \"Michigan werewolves\",\n    \"description\": \"Quia facilis expedita harum dolorem iusto porro sed.\",\n    \"members\": [\n      {\n        \"id\": 2,\n        \"role\": \"member\",\n        \"email\": \"katelynn@mante.org\",\n        \"full_name\": \"Rowland, Hoppe\"\n      },\n      {\n        \"id\": 3,\n        \"role\": \"member\",\n        \"email\": \"krista@robel.name\",\n        \"full_name\": \"Mya, Zulauf\"\n      }\n    ],\n    \"admins\": [\n      {\n        \"id\": 1,\n        \"role\": \"admin\",\n        \"email\": \"ethyl@boganmcclure.com\",\n        \"full_name\": \"Cecelia, Glover\"\n      }\n    ]\n  }\n}",
+      "response_headers": {
+        "X-Frame-Options": "SAMEORIGIN",
+        "X-XSS-Protection": "1; mode=block",
+        "X-Content-Type-Options": "nosniff",
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE, OPTIONS",
+        "Content-Type": "application/json; charset=utf-8",
+        "ETag": "W/\"e1c66b3a7248f5ea267b7562dc986136\"",
+        "Cache-Control": "max-age=0, private, must-revalidate",
+        "X-Request-Id": "c6532bfc-a929-4c0a-ba0f-3543b2b13246",
+        "X-Runtime": "0.017151",
+        "Content-Length": "402"
+      },
+      "response_content_type": "application/json; charset=utf-8",
+      "curl": null
+    }
+  ]
+}
