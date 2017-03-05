@@ -21,4 +21,14 @@ class GroupsService < ApplicationService
       return FailureResponse.new(['Can not find the group with given id'])
     end
   end
+
+  def delete_group(group_id)
+    @group = Group.find_by(id: group_id)
+    if @group && @group.destroy
+      return Response.new("successfully deleted", success: true)
+    else
+      return FailureResponse.new(['Can not find the group with given id'])
+    end
+  end
+
 end

@@ -44,7 +44,7 @@
     {
       "request_method": "POST",
       "request_path": "api/v1/users",
-      "request_body": "{\"user\":{\"first_name\":\"Jamel\",\"last_name\":\"Torphy\",\"email\":\"lilliana@wehner.biz\",\"mobile\":\"2536964731\",\"password\":\"Zr756l3lUm\"}}",
+      "request_body": "{\"user\":{\"first_name\":\"Mose\",\"last_name\":\"Volkman\",\"email\":\"tyshawn_considine@mcdermott.co\",\"mobile\":\"5208172373\",\"password\":\"293k6i1rUeBz\"}}",
       "request_headers": {
         "Content-Type": "application/json",
         "Host": "example.org",
@@ -55,7 +55,7 @@
       "request_content_type": "application/json",
       "response_status": 201,
       "response_status_text": "Created",
-      "response_body": "{\n  \"success\": true,\n  \"data\": {\n    \"id\": 1,\n    \"first_name\": \"Jamel\",\n    \"last_name\": \"Torphy\",\n    \"email\": \"lilliana@wehner.biz\",\n    \"full_name\": \"Jamel Torphy\",\n    \"mobile\": \"2536964731\"\n  },\n  \"token\": \"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoiMSIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNDg4MTM0ODE2LCJleHAiOjE0ODgxNDkyMTZ9.IkF-uS2m4-sgK0AzM-5uBbUBOzNKH-gsk0AP0MVCBpA\"\n}",
+      "response_body": "{\n  \"success\": true,\n  \"data\": {\n    \"id\": 1,\n    \"first_name\": \"Mose\",\n    \"last_name\": \"Volkman\",\n    \"email\": \"tyshawn_considine@mcdermott.co\",\n    \"full_name\": \"Mose Volkman\",\n    \"mobile\": \"5208172373\"\n  },\n  \"token\": \"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoiMSIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNDg4NzA4MjUxLCJleHAiOjE0ODg3MjI2NTF9.Hqvi9qiVEKFmVUGUCm5Ap27m1Db3dA7SbNsSTpQiOdc\"\n}",
       "response_headers": {
         "X-Frame-Options": "SAMEORIGIN",
         "X-XSS-Protection": "1; mode=block",
@@ -63,11 +63,11 @@
         "Access-Control-Allow-Origin": "*",
         "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE, OPTIONS",
         "Content-Type": "application/json; charset=utf-8",
-        "ETag": "W/\"5963a5a0328da6d5049e4214903954ac\"",
+        "ETag": "W/\"f43ca28fe393bb09b7ca5a55131ebcde\"",
         "Cache-Control": "max-age=0, private, must-revalidate",
-        "X-Request-Id": "0b57741f-e7d8-4558-b292-38adac982493",
-        "X-Runtime": "0.009748",
-        "Content-Length": "329"
+        "X-Request-Id": "03a7ef75-7ef6-4b35-a318-2d704de66a04",
+        "X-Runtime": "0.026895",
+        "Content-Length": "340"
       },
       "response_content_type": "application/json; charset=utf-8",
       "curl": null

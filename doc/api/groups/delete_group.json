@@ -1,10 +1,10 @@
 {
   "resource": "Groups",
   "resource_explanation": null,
-  "http_method": "GET",
+  "http_method": "DELETE",
   "route": "api/v1/groups/:id",
-  "description": "Get Group information",
-  "explanation": "To get the complete information about the group",
+  "description": "Delete Group",
+  "explanation": "To delete the group",
   "parameters": [
 
   ],
@@ -13,7 +13,7 @@
   ],
   "requests": [
     {
-      "request_method": "GET",
+      "request_method": "DELETE",
       "request_path": "api/v1/groups/1",
       "request_body": null,
       "request_headers": {
@@ -27,7 +27,7 @@
       "request_content_type": "application/json",
       "response_status": 200,
       "response_status_text": "OK",
-      "response_body": "{\n  \"success\": true,\n  \"data\": {\n    \"id\": 1,\n    \"name\": \"California ants\",\n    \"description\": \"Id ea qui amet cumque.\",\n    \"members\": [\n      {\n        \"id\": 2,\n        \"role\": \"member\",\n        \"email\": \"ubaldo.schinner@kutchshields.com\",\n        \"full_name\": \"Gloria, Hickle\"\n      },\n      {\n        \"id\": 3,\n        \"role\": \"member\",\n        \"email\": \"ezra.zemlak@gulgowskinienow.name\",\n        \"full_name\": \"Burdette, Mosciski\"\n      }\n    ],\n    \"admins\": [\n      {\n        \"id\": 1,\n        \"role\": \"admin\",\n        \"email\": \"napoleon_cruickshank@langgottlieb.com\",\n        \"full_name\": \"Moshe, Beier\"\n      }\n    ]\n  }\n}",
+      "response_body": "{\n  \"success\": true,\n  \"data\": \"successfully deleted\"\n}",
       "response_headers": {
         "X-Frame-Options": "SAMEORIGIN",
         "X-XSS-Protection": "1; mode=block",
@@ -35,11 +35,11 @@
         "Access-Control-Allow-Origin": "*",
         "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE, OPTIONS",
         "Content-Type": "application/json; charset=utf-8",
-        "ETag": "W/\"b844b96217252618070ae6ecfe9b1484\"",
+        "ETag": "W/\"3faab16bcf2fff096df57af4a6ddf38f\"",
         "Cache-Control": "max-age=0, private, must-revalidate",
-        "X-Request-Id": "3d1e6cdf-3d48-40bf-8554-3238b2d7dc8e",
-        "X-Runtime": "0.015778",
-        "Content-Length": "416"
+        "X-Request-Id": "2e3335c1-89d2-49c8-b9d2-61837e26b685",
+        "X-Runtime": "0.007051",
+        "Content-Length": "46"
       },
       "response_content_type": "application/json; charset=utf-8",
       "curl": null

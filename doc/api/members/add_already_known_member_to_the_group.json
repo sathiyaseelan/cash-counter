@@ -1,22 +1,25 @@
 {
-  "resource": "Groups",
+  "resource": "Members",
   "resource_explanation": null,
   "http_method": "POST",
-  "route": "api/v1/groups",
-  "description": "Create a new group [valid]",
-  "explanation": "Create a new Group",
+  "route": "api/v1/groups/:id/members",
+  "description": "Add already known member to the group",
+  "explanation": "To add a person(already related) member to the group",
   "parameters": [
     {
-      "scope": "group",
       "required": true,
-      "name": "name",
-      "description": "Name of the group"
+      "name": "user_email",
+      "description": "email of new user"
     },
     {
-      "scope": "group",
       "required": true,
-      "name": "description",
-      "description": "Description for the group"
+      "name": "user_id",
+      "description": "id of existing user"
+    },
+    {
+      "required": false,
+      "name": "role",
+      "description": "role of the user in the user (member/ admin) - default: member"
     }
   ],
   "response_fields": [
@@ -25,8 +28,8 @@
   "requests": [
     {
       "request_method": "POST",
-      "request_path": "api/v1/groups",
-      "request_body": "{\"group\":{\"name\":\"Nevada vampires\",\"description\":\"Eum blanditiis et illo mollitia.\"}}",
+      "request_path": "api/v1/groups/1/members",
+      "request_body": "{\"user_id\":1}",
       "request_headers": {
         "Content-Type": "application/json",
         "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoiMSIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNDg4NzA4MjUxLCJleHAiOjE0ODg3MjI2NTF9.Hqvi9qiVEKFmVUGUCm5Ap27m1Db3dA7SbNsSTpQiOdc",
@@ -36,9 +39,9 @@
       "request_query_parameters": {
       },
       "request_content_type": "application/json",
-      "response_status": 201,
-      "response_status_text": "Created",
-      "response_body": "{\n  \"success\": true,\n  \"data\": {\n    \"id\": 1,\n    \"name\": \"Nevada vampires\",\n    \"description\": \"Eum blanditiis et illo mollitia.\",\n    \"members\": [\n\n    ],\n    \"admins\": [\n      {\n        \"id\": 1,\n        \"role\": \"admin\",\n        \"email\": \"test@example.com\",\n        \"full_name\": \"Kurtis, Schroeder\"\n      }\n    ]\n  }\n}",
+      "response_status": 200,
+      "response_status_text": "OK",
+      "response_body": "{\n  \"success\": true,\n  \"data\": {\n    \"id\": 4,\n    \"role\": \"member\",\n    \"email\": \"test@example.com\",\n    \"full_name\": \"Roberta, Thompson\"\n  }\n}",
       "response_headers": {
         "X-Frame-Options": "SAMEORIGIN",
         "X-XSS-Protection": "1; mode=block",
@@ -46,11 +49,11 @@
         "Access-Control-Allow-Origin": "*",
         "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE, OPTIONS",
         "Content-Type": "application/json; charset=utf-8",
-        "ETag": "W/\"9175af69c36b39ccfce99616ab917f65\"",
+        "ETag": "W/\"15930f6a3e54c97fd819013271c3e7a5\"",
         "Cache-Control": "max-age=0, private, must-revalidate",
-        "X-Request-Id": "b9845e69-9ca9-4803-8c1c-8b181d3e12d5",
-        "X-Runtime": "0.041757",
-        "Content-Length": "213"
+        "X-Request-Id": "1a369a04-e720-4b85-9e29-db0bfd2e7685",
+        "X-Runtime": "0.010110",
+        "Content-Length": "107"
       },
       "response_content_type": "application/json; charset=utf-8",
       "curl": null

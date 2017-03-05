@@ -57,6 +57,7 @@ resource "Users" do
       expect(status).to eq 200
       response_json = JSON.parse(response_body)
       expect(response_json['token']).not_to eq nil
+      expect(response_json['data']).not_to eq nil
     end
   end
   context 'for already existing users and with token' do

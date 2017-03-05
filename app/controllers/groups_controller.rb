@@ -24,6 +24,17 @@ class GroupsController < ApplicationController
       render json: ErrorResponse.new(e.message), status: :internal_server_error
   end
 
+  def destroy
+    response = GroupsService.new.delete_group params[:id]
+    if response.success?
+      render json: response, status: :ok
+    else
+      render json: response, status: :not_found
+    end
+    rescue Exception => e
+      render json: ErrorResponse.new(e.message), status: :internal_server_error
+  end
+
   def add_member
   end
 

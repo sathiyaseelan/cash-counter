@@ -37,7 +37,7 @@
       "request_content_type": "application/json",
       "response_status": 200,
       "response_status_text": "OK",
-      "response_body": "{\n  \"success\": true,\n  \"data\": null,\n  \"token\": \"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoiMSIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNDg4MTM0ODE2LCJleHAiOjE0ODgxNDkyMTZ9.IkF-uS2m4-sgK0AzM-5uBbUBOzNKH-gsk0AP0MVCBpA\"\n}",
+      "response_body": "{\n  \"success\": true,\n  \"data\": {\n    \"id\": 1,\n    \"first_name\": \"Eric\",\n    \"last_name\": \"Little\",\n    \"email\": \"test@example.com\",\n    \"full_name\": \"Eric Little\",\n    \"mobile\": \"4662891995\"\n  },\n  \"token\": \"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoiMSIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNDg4NzA4MjUxLCJleHAiOjE0ODg3MjI2NTF9.Hqvi9qiVEKFmVUGUCm5Ap27m1Db3dA7SbNsSTpQiOdc\"\n}",
       "response_headers": {
         "X-Frame-Options": "SAMEORIGIN",
         "X-XSS-Protection": "1; mode=block",
@@ -45,11 +45,11 @@
         "Access-Control-Allow-Origin": "*",
         "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE, OPTIONS",
         "Content-Type": "application/json; charset=utf-8",
-        "ETag": "W/\"abe11bd73af28926ef86660d72131533\"",
+        "ETag": "W/\"26d8ad67026c46b28893bf2e18c94c7b\"",
         "Cache-Control": "max-age=0, private, must-revalidate",
-        "X-Request-Id": "76d0d024-6171-4c07-9f1a-dc3d1a3c39fe",
-        "X-Runtime": "0.005299",
-        "Content-Length": "204"
+        "X-Request-Id": "3b70cf23-8783-4a88-9383-1b871fffe4e6",
+        "X-Runtime": "0.006098",
+        "Content-Length": "324"
       },
       "response_content_type": "application/json; charset=utf-8",
       "curl": null

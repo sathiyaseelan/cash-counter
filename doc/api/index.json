@@ -12,11 +12,38 @@
           "method": "post"
         },
         {
+          "description": "Delete Group",
+          "link": "groups/delete_group.json",
+          "groups": "all",
+          "route": "api/v1/groups/:id",
+          "method": "delete"
+        },
+        {
           "description": "Get Group information",
           "link": "groups/get_group_information.json",
           "groups": "all",
           "route": "api/v1/groups/:id",
           "method": "get"
+        }
+      ]
+    },
+    {
+      "name": "Members",
+      "explanation": null,
+      "examples": [
+        {
+          "description": "Add already known member to the group",
+          "link": "members/add_already_known_member_to_the_group.json",
+          "groups": "all",
+          "route": "api/v1/groups/:id/members",
+          "method": "post"
+        },
+        {
+          "description": "Add already known member to the group as admin",
+          "link": "members/add_already_known_member_to_the_group_as_admin.json",
+          "groups": "all",
+          "route": "api/v1/groups/:id/members",
+          "method": "post"
         }
       ]
     },

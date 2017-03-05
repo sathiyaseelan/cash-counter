@@ -18,7 +18,7 @@
       "request_body": null,
       "request_headers": {
         "Content-Type": "application/json",
-        "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoiMSIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNDg4MTM0ODE2LCJleHAiOjE0ODgxNDkyMTZ9.IkF-uS2m4-sgK0AzM-5uBbUBOzNKH-gsk0AP0MVCBpA",
+        "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoiMSIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNDg4NzA4MjUxLCJleHAiOjE0ODg3MjI2NTF9.Hqvi9qiVEKFmVUGUCm5Ap27m1Db3dA7SbNsSTpQiOdc",
         "Host": "example.org",
         "Cookie": ""
       },
@@ -27,7 +27,7 @@
       "request_content_type": "application/json",
       "response_status": 200,
       "response_status_text": "OK",
-      "response_body": "{\n  \"success\": true,\n  \"data\": {\n    \"id\": 1,\n    \"first_name\": \"Jan\",\n    \"last_name\": \"Bernier\",\n    \"email\": \"test@example.com\",\n    \"full_name\": \"Jan Bernier\",\n    \"mobile\": \"1190565075\"\n  }\n}",
+      "response_body": "{\n  \"success\": true,\n  \"data\": {\n    \"id\": 1,\n    \"first_name\": \"Amir\",\n    \"last_name\": \"Robel\",\n    \"email\": \"test@example.com\",\n    \"full_name\": \"Amir Robel\",\n    \"mobile\": \"3044017666\"\n  }\n}",
       "response_headers": {
         "X-Frame-Options": "SAMEORIGIN",
         "X-XSS-Protection": "1; mode=block",
@@ -35,11 +35,11 @@
         "Access-Control-Allow-Origin": "*",
         "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE, OPTIONS",
         "Content-Type": "application/json; charset=utf-8",
-        "ETag": "W/\"de68266326b4e01f1cde1630cb147dee\"",
+        "ETag": "W/\"dde952a6bd32fcf52feb3698fa5008c3\"",
         "Cache-Control": "max-age=0, private, must-revalidate",
-        "X-Request-Id": "039f0676-fb19-4798-a932-08a156acdb22",
-        "X-Runtime": "0.006744",
-        "Content-Length": "148"
+        "X-Request-Id": "e194f422-592b-4196-8bdc-ed55d0832e7f",
+        "X-Runtime": "0.002478",
+        "Content-Length": "146"
       },
       "response_content_type": "application/json; charset=utf-8",
       "curl": null

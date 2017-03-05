@@ -33,4 +33,15 @@ resource "Groups" do
     end
   end
 
+  delete 'api/v1/groups/:id' do
+    let(:group) { create(:group, members_count: 2) }
+    let(:id) { group.id}
+    before { generate_token_and_set_header user }
+    example_request 'Delete Group' do
+      explanation 'To delete the group'
+      #p response_body
+      expect(status).to eq 200
+    end
+  end
+
 end

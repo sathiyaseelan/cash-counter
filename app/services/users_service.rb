@@ -20,7 +20,7 @@ class UsersService < ApplicationService
     @user = User.find_by(email: email)
     if @user && @user.authenticate(password)
       @token = create_token(@user)
-      return Response.new(nil, success:true, token: @token)
+      return Response.new(@user, success:true, token: @token)
     else
       return FailureResponse.new(['Invalid email / password'])
     end
