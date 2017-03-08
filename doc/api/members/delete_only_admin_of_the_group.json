@@ -1,10 +1,10 @@
 {
-  "resource": "Groups",
+  "resource": "Members",
   "resource_explanation": null,
   "http_method": "DELETE",
-  "route": "api/v1/groups/:id",
-  "description": "Delete Group",
-  "explanation": "To delete the group",
+  "route": "api/v1/groups/:group_id/members/:id",
+  "description": "Delete only admin of the group",
+  "explanation": null,
   "parameters": [
 
   ],
@@ -14,20 +14,20 @@
   "requests": [
     {
       "request_method": "DELETE",
-      "request_path": "api/v1/groups/1",
+      "request_path": "api/v1/groups/1/members/1",
       "request_body": null,
       "request_headers": {
         "Content-Type": "application/json",
-        "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoiMSIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNDg4OTQ2MzMzLCJleHAiOjE0ODg5NjA3MzN9.7yO5Kk35ST-wJJYeuc4M3IqClMS0HlLTgNJOd9LMHnk",
+        "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoiMSIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNDg4OTQ2MzM0LCJleHAiOjE0ODg5NjA3MzR9.Z2WCxCl9SR01OLI0V2MqN68Yn1cDAuACsdQxjsbU1gE",
         "Host": "example.org",
         "Cookie": ""
       },
       "request_query_parameters": {
       },
       "request_content_type": "application/json",
-      "response_status": 200,
-      "response_status_text": "OK",
-      "response_body": "{\n  \"success\": true,\n  \"data\": \"successfully deleted\"\n}",
+      "response_status": 422,
+      "response_status_text": "Unprocessable Entity",
+      "response_body": "{\n  \"success\": false,\n  \"messages\": [\n    \"Can not delete admin (only one available):\"\n  ]\n}",
       "response_headers": {
         "X-Frame-Options": "SAMEORIGIN",
         "X-XSS-Protection": "1; mode=block",
@@ -35,11 +35,10 @@
         "Access-Control-Allow-Origin": "*",
         "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE, OPTIONS",
         "Content-Type": "application/json; charset=utf-8",
-        "ETag": "W/\"3faab16bcf2fff096df57af4a6ddf38f\"",
-        "Cache-Control": "max-age=0, private, must-revalidate",
-        "X-Request-Id": "dfd866b5-22fe-4839-be57-67cede5637ab",
-        "X-Runtime": "0.006853",
-        "Content-Length": "46"
+        "Cache-Control": "no-cache",
+        "X-Request-Id": "a4b3e1d4-c482-4709-8695-2817dddbbb4f",
+        "X-Runtime": "0.009185",
+        "Content-Length": "75"
       },
       "response_content_type": "application/json; charset=utf-8",
       "curl": null

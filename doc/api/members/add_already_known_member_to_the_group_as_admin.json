@@ -2,7 +2,7 @@
   "resource": "Members",
   "resource_explanation": null,
   "http_method": "POST",
-  "route": "api/v1/groups/:id/members",
+  "route": "api/v1/groups/:group_id/members",
   "description": "Add already known member to the group as admin",
   "explanation": "To add a person(already related) member to the group as admin",
   "parameters": [
@@ -32,7 +32,7 @@
       "request_body": "{\"user_id\":1,\"role\":\"admin\"}",
       "request_headers": {
         "Content-Type": "application/json",
-        "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoiMSIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNDg4NzA4MjUxLCJleHAiOjE0ODg3MjI2NTF9.Hqvi9qiVEKFmVUGUCm5Ap27m1Db3dA7SbNsSTpQiOdc",
+        "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoiMSIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNDg4OTQ2MzMzLCJleHAiOjE0ODg5NjA3MzN9.7yO5Kk35ST-wJJYeuc4M3IqClMS0HlLTgNJOd9LMHnk",
         "Host": "example.org",
         "Cookie": ""
       },
@@ -41,7 +41,7 @@
       "request_content_type": "application/json",
       "response_status": 200,
       "response_status_text": "OK",
-      "response_body": "{\n  \"success\": true,\n  \"data\": {\n    \"id\": 4,\n    \"role\": \"admin\",\n    \"email\": \"test@example.com\",\n    \"full_name\": \"Chelsey, Walsh\"\n  }\n}",
+      "response_body": "{\n  \"success\": true,\n  \"data\": {\n    \"id\": 4,\n    \"role\": \"admin\",\n    \"email\": \"test@example.com\",\n    \"full_name\": \"Dessie, Robel\"\n  }\n}",
       "response_headers": {
         "X-Frame-Options": "SAMEORIGIN",
         "X-XSS-Protection": "1; mode=block",
@@ -49,11 +49,11 @@
         "Access-Control-Allow-Origin": "*",
         "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE, OPTIONS",
         "Content-Type": "application/json; charset=utf-8",
-        "ETag": "W/\"9d11448a417360cba2ac3177909fe178\"",
+        "ETag": "W/\"356c5a632485fa73a3bbdf25843cced8\"",
         "Cache-Control": "max-age=0, private, must-revalidate",
-        "X-Request-Id": "49bcc496-bc4d-4ced-aedd-c4c6e68ac742",
-        "X-Runtime": "0.004189",
-        "Content-Length": "103"
+        "X-Request-Id": "201dca71-428c-45f9-b903-86f3550c718e",
+        "X-Runtime": "0.004087",
+        "Content-Length": "102"
       },
       "response_content_type": "application/json; charset=utf-8",
       "curl": null

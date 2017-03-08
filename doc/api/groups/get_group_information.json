@@ -18,7 +18,7 @@
       "request_body": null,
       "request_headers": {
         "Content-Type": "application/json",
-        "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoiMSIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNDg4NzA4MjUxLCJleHAiOjE0ODg3MjI2NTF9.Hqvi9qiVEKFmVUGUCm5Ap27m1Db3dA7SbNsSTpQiOdc",
+        "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoiMSIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNDg4OTQ2MzMzLCJleHAiOjE0ODg5NjA3MzN9.7yO5Kk35ST-wJJYeuc4M3IqClMS0HlLTgNJOd9LMHnk",
         "Host": "example.org",
         "Cookie": ""
       },
@@ -27,7 +27,7 @@
       "request_content_type": "application/json",
       "response_status": 200,
       "response_status_text": "OK",
-      "response_body": "{\n  \"success\": true,\n  \"data\": {\n    \"id\": 1,\n    \"name\": \"California ants\",\n    \"description\": \"Id ea qui amet cumque.\",\n    \"members\": [\n      {\n        \"id\": 2,\n        \"role\": \"member\",\n        \"email\": \"ubaldo.schinner@kutchshields.com\",\n        \"full_name\": \"Gloria, Hickle\"\n      },\n      {\n        \"id\": 3,\n        \"role\": \"member\",\n        \"email\": \"ezra.zemlak@gulgowskinienow.name\",\n        \"full_name\": \"Burdette, Mosciski\"\n      }\n    ],\n    \"admins\": [\n      {\n        \"id\": 1,\n        \"role\": \"admin\",\n        \"email\": \"napoleon_cruickshank@langgottlieb.com\",\n        \"full_name\": \"Moshe, Beier\"\n      }\n    ]\n  }\n}",
+      "response_body": "{\n  \"success\": true,\n  \"data\": {\n    \"id\": 1,\n    \"name\": \"New Hampshire sons\",\n    \"description\": \"Recusandae blanditiis ut ut quisquam harum molestiae nesciunt voluptate.\",\n    \"members\": [\n      {\n        \"id\": 2,\n        \"role\": \"member\",\n        \"email\": \"eldridge@eichmannkeebler.biz\",\n        \"full_name\": \"Annabell, Strosin\"\n      },\n      {\n        \"id\": 3,\n        \"role\": \"member\",\n        \"email\": \"fernando_feeney@reynoldsdonnelly.net\",\n        \"full_name\": \"Willy, Hodkiewicz\"\n      }\n    ],\n    \"admins\": [\n      {\n        \"id\": 1,\n        \"role\": \"admin\",\n        \"email\": \"alysa@bosco.org\",\n        \"full_name\": \"Naomi, Schowalter\"\n      }\n    ]\n  }\n}",
       "response_headers": {
         "X-Frame-Options": "SAMEORIGIN",
         "X-XSS-Protection": "1; mode=block",
@@ -35,11 +35,11 @@
         "Access-Control-Allow-Origin": "*",
         "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE, OPTIONS",
         "Content-Type": "application/json; charset=utf-8",
-        "ETag": "W/\"b844b96217252618070ae6ecfe9b1484\"",
+        "ETag": "W/\"c208d926da7f17b6458f5800bc5f3b5a\"",
         "Cache-Control": "max-age=0, private, must-revalidate",
-        "X-Request-Id": "3d1e6cdf-3d48-40bf-8554-3238b2d7dc8e",
+        "X-Request-Id": "537bebcf-a2e5-496b-b6a0-32fff470a482",
         "X-Runtime": "0.015778",
-        "Content-Length": "416"
+        "Content-Length": "454"
       },
       "response_content_type": "application/json; charset=utf-8",
       "curl": null

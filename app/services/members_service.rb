@@ -26,5 +26,15 @@ class MembersService < ApplicationService
     end
   end
 
+  def destroy_member(group_id: , member_id:)
+    @member = Member.find_by(id: member_id)
+    if @member.nil? || @member.group_id != group_id.to_i
+      return FailureResponse.new(['Can not find member with given ids'])
+    elsif @member.admin? && @member.group.admins.size == 1
+      return FailureResponse.new(['Can not delete admin (only one available)'])
+    elsif @member.destroy
+      return Response.new(['Member has been destroyed'], success: true)
+    end
+  end
 
 end

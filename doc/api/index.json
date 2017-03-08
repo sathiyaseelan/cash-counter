@@ -35,15 +35,36 @@
           "description": "Add already known member to the group",
           "link": "members/add_already_known_member_to_the_group.json",
           "groups": "all",
-          "route": "api/v1/groups/:id/members",
+          "route": "api/v1/groups/:group_id/members",
           "method": "post"
         },
         {
           "description": "Add already known member to the group as admin",
           "link": "members/add_already_known_member_to_the_group_as_admin.json",
           "groups": "all",
-          "route": "api/v1/groups/:id/members",
+          "route": "api/v1/groups/:group_id/members",
           "method": "post"
+        },
+        {
+          "description": "Delete a admin of the group",
+          "link": "members/delete_a_admin_of_the_group.json",
+          "groups": "all",
+          "route": "api/v1/groups/:group_id/members/:id",
+          "method": "delete"
+        },
+        {
+          "description": "Delete a member of the group",
+          "link": "members/delete_a_member_of_the_group.json",
+          "groups": "all",
+          "route": "api/v1/groups/:group_id/members/:id",
+          "method": "delete"
+        },
+        {
+          "description": "Delete only admin of the group",
+          "link": "members/delete_only_admin_of_the_group.json",
+          "groups": "all",
+          "route": "api/v1/groups/:group_id/members/:id",
+          "method": "delete"
         }
       ]
     },

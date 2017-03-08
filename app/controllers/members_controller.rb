@@ -14,10 +14,11 @@ class MembersController < ApplicationController
   end
 
   def destroy
+    response = MembersService.new.destroy_member(group_id: params[:group_id], member_id: params[:id])
     if response.success?
       render json: response, status: :ok
     else
-      render json: response, status: :not_found
+      render json: response, status: :unprocessable_entity
     end
     rescue Exception => e
       render json: ErrorResponse.new(e.message), status: :internal_server_error

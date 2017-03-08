@@ -19,4 +19,8 @@ class Member < ApplicationRecord
   scope :only_members, -> { where(role: :member)}
 
   scope :admins, -> { where(role: :admin) }
+
+  def admin?
+    self.role = :admin
+  end
 end

@@ -44,7 +44,7 @@
     {
       "request_method": "POST",
       "request_path": "api/v1/users",
-      "request_body": "{\"user\":{\"first_name\":\"Mose\",\"last_name\":\"Volkman\",\"email\":\"tyshawn_considine@mcdermott.co\",\"mobile\":\"5208172373\",\"password\":\"293k6i1rUeBz\"}}",
+      "request_body": "{\"user\":{\"first_name\":\"Aurore\",\"last_name\":\"Kuphal\",\"email\":\"jonas@bechtelar.com\",\"mobile\":\"6397827084\",\"password\":\"H16a0f46EcX\"}}",
       "request_headers": {
         "Content-Type": "application/json",
         "Host": "example.org",
@@ -55,7 +55,7 @@
       "request_content_type": "application/json",
       "response_status": 201,
       "response_status_text": "Created",
-      "response_body": "{\n  \"success\": true,\n  \"data\": {\n    \"id\": 1,\n    \"first_name\": \"Mose\",\n    \"last_name\": \"Volkman\",\n    \"email\": \"tyshawn_considine@mcdermott.co\",\n    \"full_name\": \"Mose Volkman\",\n    \"mobile\": \"5208172373\"\n  },\n  \"token\": \"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoiMSIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNDg4NzA4MjUxLCJleHAiOjE0ODg3MjI2NTF9.Hqvi9qiVEKFmVUGUCm5Ap27m1Db3dA7SbNsSTpQiOdc\"\n}",
+      "response_body": "{\n  \"success\": true,\n  \"data\": {\n    \"id\": 1,\n    \"first_name\": \"Aurore\",\n    \"last_name\": \"Kuphal\",\n    \"email\": \"jonas@bechtelar.com\",\n    \"full_name\": \"Aurore Kuphal\",\n    \"mobile\": \"6397827084\"\n  },\n  \"token\": \"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoiMSIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNDg4OTQ2MzM0LCJleHAiOjE0ODg5NjA3MzR9.Z2WCxCl9SR01OLI0V2MqN68Yn1cDAuACsdQxjsbU1gE\"\n}",
       "response_headers": {
         "X-Frame-Options": "SAMEORIGIN",
         "X-XSS-Protection": "1; mode=block",
@@ -63,11 +63,11 @@
         "Access-Control-Allow-Origin": "*",
         "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE, OPTIONS",
         "Content-Type": "application/json; charset=utf-8",
-        "ETag": "W/\"f43ca28fe393bb09b7ca5a55131ebcde\"",
+        "ETag": "W/\"eb79a3329745037e5c4530db61cf78ed\"",
         "Cache-Control": "max-age=0, private, must-revalidate",
-        "X-Request-Id": "03a7ef75-7ef6-4b35-a318-2d704de66a04",
-        "X-Runtime": "0.026895",
-        "Content-Length": "340"
+        "X-Request-Id": "f043b887-8c62-456d-b6b2-53863aca6bb8",
+        "X-Runtime": "0.012208",
+        "Content-Length": "331"
       },
       "response_content_type": "application/json; charset=utf-8",
       "curl": null

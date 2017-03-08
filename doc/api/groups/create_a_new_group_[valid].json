@@ -26,10 +26,10 @@
     {
       "request_method": "POST",
       "request_path": "api/v1/groups",
-      "request_body": "{\"group\":{\"name\":\"Nevada vampires\",\"description\":\"Eum blanditiis et illo mollitia.\"}}",
+      "request_body": "{\"group\":{\"name\":\"Massachusetts griffins\",\"description\":\"Vitae ea est dolor dolorem et ratione sequi quia.\"}}",
       "request_headers": {
         "Content-Type": "application/json",
-        "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoiMSIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNDg4NzA4MjUxLCJleHAiOjE0ODg3MjI2NTF9.Hqvi9qiVEKFmVUGUCm5Ap27m1Db3dA7SbNsSTpQiOdc",
+        "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoiMSIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNDg4OTQ2MzMzLCJleHAiOjE0ODg5NjA3MzN9.7yO5Kk35ST-wJJYeuc4M3IqClMS0HlLTgNJOd9LMHnk",
         "Host": "example.org",
         "Cookie": ""
       },
@@ -38,7 +38,7 @@
       "request_content_type": "application/json",
       "response_status": 201,
       "response_status_text": "Created",
-      "response_body": "{\n  \"success\": true,\n  \"data\": {\n    \"id\": 1,\n    \"name\": \"Nevada vampires\",\n    \"description\": \"Eum blanditiis et illo mollitia.\",\n    \"members\": [\n\n    ],\n    \"admins\": [\n      {\n        \"id\": 1,\n        \"role\": \"admin\",\n        \"email\": \"test@example.com\",\n        \"full_name\": \"Kurtis, Schroeder\"\n      }\n    ]\n  }\n}",
+      "response_body": "{\n  \"success\": true,\n  \"data\": {\n    \"id\": 1,\n    \"name\": \"Massachusetts griffins\",\n    \"description\": \"Vitae ea est dolor dolorem et ratione sequi quia.\",\n    \"members\": [\n\n    ],\n    \"admins\": [\n      {\n        \"id\": 1,\n        \"role\": \"admin\",\n        \"email\": \"test@example.com\",\n        \"full_name\": \"Rowena, Schuppe\"\n      }\n    ]\n  }\n}",
       "response_headers": {
         "X-Frame-Options": "SAMEORIGIN",
         "X-XSS-Protection": "1; mode=block",
@@ -46,11 +46,11 @@
         "Access-Control-Allow-Origin": "*",
         "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE, OPTIONS",
         "Content-Type": "application/json; charset=utf-8",
-        "ETag": "W/\"9175af69c36b39ccfce99616ab917f65\"",
+        "ETag": "W/\"86669da4b554d0d78d1ea68fae81e7c1\"",
         "Cache-Control": "max-age=0, private, must-revalidate",
-        "X-Request-Id": "b9845e69-9ca9-4803-8c1c-8b181d3e12d5",
-        "X-Runtime": "0.041757",
-        "Content-Length": "213"
+        "X-Request-Id": "f9700f6f-368c-455b-b9fb-b931f7fbe7dd",
+        "X-Runtime": "0.050138",
+        "Content-Length": "235"
       },
       "response_content_type": "application/json; charset=utf-8",
       "curl": null

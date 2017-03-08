@@ -4,13 +4,13 @@ resource "Members" do
   header "Content-Type", "application/json"
   let(:user) { create(:user, email: 'test@example.com', password: 'password123') }
 
-  post 'api/v1/groups/:id/members' do
+  post 'api/v1/groups/:group_id/members' do
     parameter :user_email, 'email of new user',  required: true
     parameter :user_id, 'id of existing user',  required: true
     parameter :role, 'role of the user in the user (member/ admin) - default: member', required: false
 
     let(:group) { create(:group, members_count: 2) }
-    let(:id) { group.id}
+    let(:group_id) { group.id}
     context 'known user' do
 
       let(:user_id) { user.id}
@@ -54,4 +54,33 @@ resource "Members" do
     end
   end
 
+  delete 'api/v1/groups/:group_id/members/:id' do
+    let(:group) { create(:group, members_count: 2,admins_count: 2) }
+    let(:group1) {create(:group, members_count: 2)}
+    let(:group_id) { group.id}
+
+    before { generate_token_and_set_header user }
+    context 'member' do
+      let(:id) { group.members.first.id }
+      example_request 'Delete a member of the group' do
+        expect(status).to eq 200
+      end
+    end
+    context 'admin' do
+      let(:id) { group.admins.first.id }
+      example_request 'Delete a admin of the group' do
+        expect(status).to eq 200
+      end
+      context 'only one admin' do
+        let(:group_id) {group1.id}
+        let(:id) { group1.admins.last.id }
+        example_request 'Delete only admin of the group' do
+          expect(status).to eq 422
+        end
+      end
+    end
+
+
+
+  end
 end
