@@ -1,4 +1,5 @@
 class GroupsController < ApplicationController
+
   def new
   end
 
@@ -14,7 +15,7 @@ class GroupsController < ApplicationController
   end
 
   def show
-    response = GroupsService.new.find_group params[:id]
+    response = GroupsService.new(current_user).find_group params[:id]
     if response.success?
       render json: response, status: :ok
     else
@@ -25,17 +26,14 @@ class GroupsController < ApplicationController
   end
 
   def destroy
-    response = GroupsService.new.delete_group params[:id]
+    response = GroupsService.new(current_user).delete_group params[:id]
     if response.success?
       render json: response, status: :ok
     else
-      render json: response, status: :not_found
+      render json: response, status: response.error_code
     end
     rescue Exception => e
       render json: ErrorResponse.new(e.message), status: :internal_server_error
-  end
-
-  def add_member
   end
 
   private
@@ -44,6 +42,5 @@ class GroupsController < ApplicationController
     convert_keys_to_symbols params.require(:group).permit(:name,:description).to_h
   end
 
-  def member_params
-  end
+
 end

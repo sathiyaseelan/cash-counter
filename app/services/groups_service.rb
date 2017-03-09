@@ -1,4 +1,9 @@
 class GroupsService < ApplicationService
+  include GroupHelper
+
+  # def initialize(current_user)
+  #   super(current_user)
+  # end
 
   def create_group(name:, description:, user: )
     @group = Group.new({name: name, description: description})
@@ -24,10 +29,18 @@ class GroupsService < ApplicationService
 
   def delete_group(group_id)
     @group = Group.find_by(id: group_id)
-    if @group && @group.destroy
-      return Response.new("successfully deleted", success: true)
+    if @group
+      if is_admin?(group_id: @group.id)
+        if @group.destroy
+          return Response.new("successfully deleted", success: true)
+        else
+          return FailureResponse.new(['Can not delete the group'], :internal_server_error)
+        end
+      else
+        return FailureResponse.new(['Not authorized to delete the group'], :unauthorized)
+      end
     else
-      return FailureResponse.new(['Can not find the group with given id'])
+      return FailureResponse.new(['Can not find the group with given id'], :not_found)
     end
   end
 

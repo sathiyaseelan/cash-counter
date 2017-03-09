@@ -19,6 +19,13 @@
           "method": "delete"
         },
         {
+          "description": "Delete Group",
+          "link": "groups/delete_group.json",
+          "groups": "all",
+          "route": "api/v1/groups/:id",
+          "method": "delete"
+        },
+        {
           "description": "Get Group information",
           "link": "groups/get_group_information.json",
           "groups": "all",
@@ -44,6 +51,20 @@
           "groups": "all",
           "route": "api/v1/groups/:group_id/members",
           "method": "post"
+        },
+        {
+          "description": "Change admin to member",
+          "link": "members/change_admin_to_member.json",
+          "groups": "all",
+          "route": "api/v1/groups/:group_id/members/:id",
+          "method": "put"
+        },
+        {
+          "description": "Change member to admin",
+          "link": "members/change_member_to_admin.json",
+          "groups": "all",
+          "route": "api/v1/groups/:group_id/members/:id",
+          "method": "put"
         },
         {
           "description": "Delete a admin of the group",

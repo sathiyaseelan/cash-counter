@@ -1,10 +1,10 @@
 {
-  "resource": "Users",
+  "resource": "Members",
   "resource_explanation": null,
-  "http_method": "GET",
-  "route": "api/v1/users/:id",
-  "description": "To get user details",
-  "explanation": "To get the entire user details by passing user id",
+  "http_method": "PUT",
+  "route": "api/v1/groups/:group_id/members/:id",
+  "description": "Change member to admin",
+  "explanation": null,
   "parameters": [
 
   ],
@@ -13,8 +13,8 @@
   ],
   "requests": [
     {
-      "request_method": "GET",
-      "request_path": "api/v1/users/1",
+      "request_method": "PUT",
+      "request_path": "api/v1/groups/1/members/%3Aid",
       "request_body": null,
       "request_headers": {
         "Content-Type": "application/json",
@@ -25,9 +25,9 @@
       "request_query_parameters": {
       },
       "request_content_type": "application/json",
-      "response_status": 200,
-      "response_status_text": "OK",
-      "response_body": "{\n  \"success\": true,\n  \"data\": {\n    \"id\": 1,\n    \"first_name\": \"Emory\",\n    \"last_name\": \"Langworth\",\n    \"email\": \"test@example.com\",\n    \"full_name\": \"Emory Langworth\",\n    \"mobile\": \"9575026879\"\n  }\n}",
+      "response_status": 500,
+      "response_status_text": "Internal Server Error",
+      "response_body": "{\n  \"error\": \"undefined method `update_member' for #<MembersService:0x007fb180f4a630 @current_user=nil>\",\n  \"success\": false\n}",
       "response_headers": {
         "X-Frame-Options": "SAMEORIGIN",
         "X-XSS-Protection": "1; mode=block",
@@ -35,11 +35,10 @@
         "Access-Control-Allow-Origin": "*",
         "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE, OPTIONS",
         "Content-Type": "application/json; charset=utf-8",
-        "ETag": "W/\"834f52277bde34b85185e333d3140a3c\"",
-        "Cache-Control": "max-age=0, private, must-revalidate",
-        "X-Request-Id": "f0f1d30c-4d2b-4729-95ab-8329fec153c4",
-        "X-Runtime": "0.004960",
-        "Content-Length": "156"
+        "Cache-Control": "no-cache",
+        "X-Request-Id": "aa069a43-69b8-44b8-a693-82fd3a1160a7",
+        "X-Runtime": "0.008656",
+        "Content-Length": "127"
       },
       "response_content_type": "application/json; charset=utf-8",
       "curl": null

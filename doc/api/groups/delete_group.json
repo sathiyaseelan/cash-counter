@@ -4,7 +4,7 @@
   "http_method": "DELETE",
   "route": "api/v1/groups/:id",
   "description": "Delete Group",
-  "explanation": "To delete the group",
+  "explanation": "Deleting the group - member/ others cant delete",
   "parameters": [
 
   ],
@@ -18,16 +18,16 @@
       "request_body": null,
       "request_headers": {
         "Content-Type": "application/json",
-        "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoiMSIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNDg4OTQ2MzMzLCJleHAiOjE0ODg5NjA3MzN9.7yO5Kk35ST-wJJYeuc4M3IqClMS0HlLTgNJOd9LMHnk",
+        "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoiMSIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNDg5MDM3NzY1LCJleHAiOjE0ODkwNTIxNjV9.pkHeM8IykWfUra6Rc1dQ88QOi8yTeFgfKUMpdyBROVc",
         "Host": "example.org",
         "Cookie": ""
       },
       "request_query_parameters": {
       },
       "request_content_type": "application/json",
-      "response_status": 200,
-      "response_status_text": "OK",
-      "response_body": "{\n  \"success\": true,\n  \"data\": \"successfully deleted\"\n}",
+      "response_status": 401,
+      "response_status_text": "Unauthorized",
+      "response_body": "{\n  \"success\": false,\n  \"messages\": [\n    \"Not authorized to delete the group:\"\n  ]\n}",
       "response_headers": {
         "X-Frame-Options": "SAMEORIGIN",
         "X-XSS-Protection": "1; mode=block",
@@ -35,11 +35,10 @@
         "Access-Control-Allow-Origin": "*",
         "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE, OPTIONS",
         "Content-Type": "application/json; charset=utf-8",
-        "ETag": "W/\"3faab16bcf2fff096df57af4a6ddf38f\"",
-        "Cache-Control": "max-age=0, private, must-revalidate",
-        "X-Request-Id": "dfd866b5-22fe-4839-be57-67cede5637ab",
-        "X-Runtime": "0.006853",
-        "Content-Length": "46"
+        "Cache-Control": "no-cache",
+        "X-Request-Id": "2431ecfb-a792-4ad6-b3f1-157d65d02e11",
+        "X-Runtime": "0.004104",
+        "Content-Length": "68"
       },
       "response_content_type": "application/json; charset=utf-8",
       "curl": null

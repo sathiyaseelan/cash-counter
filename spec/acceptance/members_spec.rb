@@ -79,8 +79,21 @@ resource "Members" do
         end
       end
     end
+  end
 
+  put 'api/v1/groups/:group_id/members/:id' do
+    let(:group) { create(:group, members_count: 2,admins_count: 1) }
+    let(:group_id) { group.id}
 
+    before { generate_token_and_set_header user }
+    example 'Change member to admin' do
+      id = group.members.first.id
+      do_request
+    end
 
+    example 'Change admin to member' do
+      id = group.admins.first.id
+      do_request
+    end
   end
 end

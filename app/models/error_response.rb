@@ -4,6 +4,7 @@ class ErrorResponse < Response
   def initialize(error)
     @error = error
     @success = false
+    
   end
 
 end

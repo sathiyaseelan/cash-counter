@@ -17,7 +17,9 @@ resource "Groups" do
 
       example_request "Create a new group [valid]" do
         explanation "Create a new Group"
+        p response_body
         expect(status).to eq 201
+
       end
     end
   end
@@ -35,13 +37,29 @@ resource "Groups" do
 
   delete 'api/v1/groups/:id' do
     let(:group) { create(:group, members_count: 2) }
-    let(:id) { group.id}
-    before { generate_token_and_set_header user }
-    example_request 'Delete Group' do
-      explanation 'To delete the group'
-      #p response_body
-      expect(status).to eq 200
+
+    context 'admin user' do
+      let!(:user_admin) { create(:member, user: user, group: group,role: :admin )}
+      let(:id) { group.id}
+      before {
+        generate_token_and_set_header user }
+      example_request 'Delete Group' do
+        explanation 'To delete the group, only admin of the group can delete the group'
+        expect(status).to eq 200
+      end
     end
+    context 'non admin user' do
+
+      let(:id) { group.id}
+      before {
+        generate_token_and_set_header user }
+      example_request 'Delete Group' do
+        explanation 'Deleting the group - member/ others can''t delete'
+
+        expect(status).to eq 401
+      end
+    end
+
   end
 
 end

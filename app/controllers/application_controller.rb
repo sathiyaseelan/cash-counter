@@ -11,7 +11,6 @@ class ApplicationController < ActionController::Base
 
   protected
   def authenticate_request!
-
     unless user_id_in_token?
       render json: {success: false, errors: ['Not Authenticated'] }, status: :unauthorized
       return
@@ -21,7 +20,7 @@ class ApplicationController < ActionController::Base
     else
       render json: {success: false, errors: ['Session invalid'] }, status: :unauthorized
     end
-  rescue JWT::VerificationError, JWT::DecodeError
+  rescue JWT::VerificationError, JWT::DecodeError => e
     render json: {success: false, errors: ['Not Authenticated'] }, status: :unauthorized
   end
 

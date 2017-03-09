@@ -44,7 +44,7 @@
     {
       "request_method": "POST",
       "request_path": "api/v1/users",
-      "request_body": "{\"user\":{\"first_name\":\"Aurore\",\"last_name\":\"Kuphal\",\"email\":\"jonas@bechtelar.com\",\"mobile\":\"6397827084\",\"password\":\"H16a0f46EcX\"}}",
+      "request_body": "{\"user\":{\"first_name\":\"Kolby\",\"last_name\":\"Schneider\",\"email\":\"magdalena.hoeger@heathcote.info\",\"mobile\":\"6132418032\",\"password\":\"UeAq6tHlZh9bM\"}}",
       "request_headers": {
         "Content-Type": "application/json",
         "Host": "example.org",
@@ -55,7 +55,7 @@
       "request_content_type": "application/json",
       "response_status": 201,
       "response_status_text": "Created",
-      "response_body": "{\n  \"success\": true,\n  \"data\": {\n    \"id\": 1,\n    \"first_name\": \"Aurore\",\n    \"last_name\": \"Kuphal\",\n    \"email\": \"jonas@bechtelar.com\",\n    \"full_name\": \"Aurore Kuphal\",\n    \"mobile\": \"6397827084\"\n  },\n  \"token\": \"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoiMSIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNDg4OTQ2MzM0LCJleHAiOjE0ODg5NjA3MzR9.Z2WCxCl9SR01OLI0V2MqN68Yn1cDAuACsdQxjsbU1gE\"\n}",
+      "response_body": "{\n  \"success\": true,\n  \"data\": {\n    \"id\": 1,\n    \"first_name\": \"Kolby\",\n    \"last_name\": \"Schneider\",\n    \"email\": \"magdalena.hoeger@heathcote.info\",\n    \"full_name\": \"Kolby Schneider\",\n    \"mobile\": \"6132418032\"\n  },\n  \"token\": \"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoiMSIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNDg5MDM3NzY1LCJleHAiOjE0ODkwNTIxNjV9.pkHeM8IykWfUra6Rc1dQ88QOi8yTeFgfKUMpdyBROVc\"\n}",
       "response_headers": {
         "X-Frame-Options": "SAMEORIGIN",
         "X-XSS-Protection": "1; mode=block",
@@ -63,11 +63,11 @@
         "Access-Control-Allow-Origin": "*",
         "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE, OPTIONS",
         "Content-Type": "application/json; charset=utf-8",
-        "ETag": "W/\"eb79a3329745037e5c4530db61cf78ed\"",
+        "ETag": "W/\"23a209f65d9ed47d27c59618b19931d8\"",
         "Cache-Control": "max-age=0, private, must-revalidate",
-        "X-Request-Id": "f043b887-8c62-456d-b6b2-53863aca6bb8",
-        "X-Runtime": "0.012208",
-        "Content-Length": "331"
+        "X-Request-Id": "4ff4987a-89d8-4010-b472-807072aee19d",
+        "X-Runtime": "0.010312",
+        "Content-Length": "347"
       },
       "response_content_type": "application/json; charset=utf-8",
       "curl": null
