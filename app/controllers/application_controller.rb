@@ -44,7 +44,6 @@ class ApplicationController < ActionController::Base
     http_token && auth_token && auth_token[:user_id].to_i
   end
 
-
   def set_cross_domain_headers
     response.headers['Access-Control-Allow-Origin'] = "*"
     response.headers['Access-Control-Allow-Methods'] = "GET, POST, PUT, DELETE, OPTIONS"

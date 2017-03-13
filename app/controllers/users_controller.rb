@@ -5,6 +5,7 @@ class UsersController < ApplicationController
   def create
     response = UsersService.new.create_user user_params
     if response.success?
+      UserMailer.signup_mail(user: response.entity).deliver_now
       render json: response, status: :created
     else
       render json: response, status: :unprocessable_entity
