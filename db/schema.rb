@@ -10,7 +10,35 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170225151843) do
+ActiveRecord::Schema.define(version: 20170318180149) do
+
+  create_table "categories", force: :cascade do |t|
+    t.string   "name"
+    t.boolean  "belongs_to_group"
+    t.integer  "group_id"
+    t.datetime "created_at",       null: false
+    t.datetime "updated_at",       null: false
+    t.index ["group_id"], name: "index_categories_on_group_id"
+  end
+
+  create_table "expenses", force: :cascade do |t|
+    t.text     "description"
+    t.decimal  "amount"
+    t.datetime "paid_on"
+    t.integer  "paid_by_id"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+    t.integer  "group_id"
+    t.index ["group_id"], name: "index_expenses_on_group_id"
+    t.index ["paid_by_id"], name: "index_expenses_on_paid_by_id"
+  end
+
+  create_table "expenses_categories", force: :cascade do |t|
+    t.integer "expense_id"
+    t.integer "category_id"
+    t.index ["category_id"], name: "index_expenses_categories_on_category_id"
+    t.index ["expense_id"], name: "index_expenses_categories_on_expense_id"
+  end
 
   create_table "groups", force: :cascade do |t|
     t.string   "name"

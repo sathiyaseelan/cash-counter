@@ -12,7 +12,8 @@
 class Group < ApplicationRecord
   has_many :members, dependent: :destroy
   has_many :users, through: :members
-
+  has_many :expenses, dependent: :destroy
+  
   def only_members
     members.only_members
   end
@@ -20,4 +21,9 @@ class Group < ApplicationRecord
   def admins
     members.admins
   end
+
+  def categories
+    Category.where(group_id: self.id)
+  end
+
 end

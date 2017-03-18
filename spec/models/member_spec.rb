@@ -5,7 +5,7 @@
 #  id       :integer          not null, primary key
 #  user_id  :integer
 #  group_id :integer
-#  role     :string
+#  role     :string           default("member")
 #
 
 require 'rails_helper'

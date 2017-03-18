@@ -13,10 +13,19 @@ require 'faker'
 end
 
 
-2.times do
+5.times do
   Group.create({name: Faker::Team.name, description: Faker::Lorem.sentence})
 end
-
+group_ids = Group.all.ids
 10.times do
-  Member.create( {user_id: Faker::Number.between(1,User.all.size), group_id: Faker::Number.between(1,Group.all.size), role: [:member, :admin].sample})
+  Member.create( {user_id: Faker::Number.between(1,User.all.size), group_id: group_ids.sample, role: [:member, :admin].sample})
+end
+
+4.times do
+  Category.create(name: Faker::Color.color_name)
+end
+
+
+4.times do
+  Category.create(name: Faker::Color.color_name, group_id: group_ids.sample)
 end

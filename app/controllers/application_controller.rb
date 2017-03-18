@@ -5,7 +5,7 @@ class ApplicationController < ActionController::Base
   before_action :authenticate_request!
 
   # Temporary fix for allowing all domain
-  before_action :set_cross_domain_headers
+  #before_action :set_cross_domain_headers
 
   attr_reader :current_user
 
@@ -44,8 +44,4 @@ class ApplicationController < ActionController::Base
     http_token && auth_token && auth_token[:user_id].to_i
   end
 
-  def set_cross_domain_headers
-    # response.headers['Access-Control-Allow-Origin'] = "*"
-    # response.headers['Access-Control-Allow-Methods'] = "GET, POST, PUT, DELETE, OPTIONS"
-  end
 end

@@ -1,10 +1,6 @@
 class GroupsService < ApplicationService
   include GroupHelper
 
-  # def initialize(current_user)
-  #   super(current_user)
-  # end
-
   def create_group(name:, description:, user: )
     @group = Group.new({name: name, description: description})
     if @group.valid?
@@ -19,7 +15,8 @@ class GroupsService < ApplicationService
   end
 
   def find_group(group_id)
-    @group = Group.includes(members: [:user]).find_by(id: group_id)
+    #@group = Group.includes(members: [:user]).find_by(id: group_id)
+    @group = Group.find_by(id: group_id)
     if @group
       return Response.new(@group, success: true)
     else

@@ -4,6 +4,7 @@ Rails.application.routes.draw do
       resources :users
       resources :groups do
         resources :members
+        resources :expenses
       end
       scope 'user' do
         post 'signin' => 'users#login'

@@ -19,7 +19,7 @@ class User < ApplicationRecord
 
   has_many :members
   has_many :groups, through: :members
-
+  has_many :expenses
   validates :email, uniqueness: true, presence: true
   validates :mobile, uniqueness: true, presence: true
 
