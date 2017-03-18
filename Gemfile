@@ -75,6 +75,7 @@ group :development do
   gem 'spring-watcher-listen', '~> 2.0.0'
   # To annotate the model, spec and factory classes with schema information
   gem 'annotate'
+  gem 'bullet'
 end
 
 group :production do
