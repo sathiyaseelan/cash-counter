@@ -44,7 +44,7 @@
     {
       "request_method": "POST",
       "request_path": "api/v1/users",
-      "request_body": "{\"user\":{\"first_name\":\"Elouise\",\"last_name\":\"Marks\",\"email\":\"jayne@bartoletti.biz\",\"mobile\":\"6788853583\",\"password\":\"Xk8jZgOl\"}}",
+      "request_body": "{\"user\":{\"first_name\":\"Jarrell\",\"last_name\":\"Wunsch\",\"email\":\"raven@mcculloughdurgan.io\",\"mobile\":\"1288810300\",\"password\":\"55TpDf87ErK5Fq\"}}",
       "request_headers": {
         "Content-Type": "application/json",
         "Host": "example.org",
@@ -60,12 +60,11 @@
         "X-Frame-Options": "SAMEORIGIN",
         "X-XSS-Protection": "1; mode=block",
         "X-Content-Type-Options": "nosniff",
-        "Access-Control-Allow-Origin": "*",
-        "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE, OPTIONS",
         "Content-Type": "application/json; charset=utf-8",
         "Cache-Control": "no-cache",
-        "X-Request-Id": "42aeaad8-9c32-4eb9-89f2-99beebcbd20e",
-        "X-Runtime": "0.005023",
+        "X-Request-Id": "70c644f3-432b-4310-bcb0-e9ceca260cb6",
+        "X-Runtime": "0.009084",
+        "Vary": "Origin",
         "Content-Length": "93"
       },
       "response_content_type": "application/json; charset=utf-8",

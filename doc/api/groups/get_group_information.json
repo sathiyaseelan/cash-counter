@@ -18,7 +18,7 @@
       "request_body": null,
       "request_headers": {
         "Content-Type": "application/json",
-        "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoiMSIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNDg5MDM3NzY1LCJleHAiOjE0ODkwNTIxNjV9.pkHeM8IykWfUra6Rc1dQ88QOi8yTeFgfKUMpdyBROVc",
+        "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoiMSIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNDg5ODY3OTQ4LCJleHAiOjE0ODk4ODIzNDh9.eMp3tYb36MiVjgv9CSPEeLB-rOhin6unQeSuTm0Pfxw",
         "Host": "example.org",
         "Cookie": ""
       },
@@ -27,19 +27,18 @@
       "request_content_type": "application/json",
       "response_status": 200,
       "response_status_text": "OK",
-      "response_body": "{\n  \"success\": true,\n  \"data\": {\n    \"id\": 1,\n    \"name\": \"Louisiana giants\",\n    \"description\": \"Non rerum soluta architecto dolorem sapiente ut aspernatur.\",\n    \"members\": [\n      {\n        \"id\": 2,\n        \"role\": \"member\",\n        \"email\": \"kiera.tremblay@heelharvey.org\",\n        \"full_name\": \"Katarina, Huel\"\n      },\n      {\n        \"id\": 3,\n        \"role\": \"member\",\n        \"email\": \"karli@crooks.biz\",\n        \"full_name\": \"Cleora, Jerde\"\n      }\n    ],\n    \"admins\": [\n      {\n        \"id\": 1,\n        \"role\": \"admin\",\n        \"email\": \"eduardo@littel.org\",\n        \"full_name\": \"Damien, Jast\"\n      }\n    ]\n  }\n}",
+      "response_body": "{\n  \"success\": true,\n  \"data\": {\n    \"id\": 1,\n    \"name\": \"Rhode Island ogres\",\n    \"description\": \"Voluptatem quaerat quae aut iste.\",\n    \"members\": [\n      {\n        \"id\": 2,\n        \"role\": \"member\",\n        \"email\": \"blanche@herman.name\",\n        \"full_name\": \"Alta, Klocko\"\n      },\n      {\n        \"id\": 3,\n        \"role\": \"member\",\n        \"email\": \"lou@sporer.net\",\n        \"full_name\": \"Wilber, Goldner\"\n      }\n    ],\n    \"admins\": [\n      {\n        \"id\": 1,\n        \"role\": \"admin\",\n        \"email\": \"nyasia@oreilly.name\",\n        \"full_name\": \"Eusebio, Steuber\"\n      }\n    ]\n  }\n}",
       "response_headers": {
         "X-Frame-Options": "SAMEORIGIN",
         "X-XSS-Protection": "1; mode=block",
         "X-Content-Type-Options": "nosniff",
-        "Access-Control-Allow-Origin": "*",
-        "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE, OPTIONS",
         "Content-Type": "application/json; charset=utf-8",
-        "ETag": "W/\"40c3105ca6e8fadcbe27b0abf9c3c983\"",
+        "ETag": "W/\"e2bddc855d76e1b06da4203098fea46f\"",
         "Cache-Control": "max-age=0, private, must-revalidate",
-        "X-Request-Id": "ad36b5f9-e0db-4616-b3a8-99e739d06a02",
-        "X-Runtime": "0.016193",
-        "Content-Length": "411"
+        "X-Request-Id": "dc3ae804-a077-4db1-9414-dfe14759dbd1",
+        "X-Runtime": "0.014881",
+        "Vary": "Origin",
+        "Content-Length": "380"
       },
       "response_content_type": "application/json; charset=utf-8",
       "curl": null

@@ -1,6 +1,19 @@
 {
   "resources": [
     {
+      "name": "Expenses",
+      "explanation": null,
+      "examples": [
+        {
+          "description": "Create a new expense [valid]",
+          "link": "expenses/create_a_new_expense_[valid].json",
+          "groups": "all",
+          "route": "api/v1/groups/:group_id/expenses",
+          "method": "post"
+        }
+      ]
+    },
+    {
       "name": "Groups",
       "explanation": null,
       "examples": [

@@ -37,19 +37,18 @@
       "request_content_type": "application/json",
       "response_status": 200,
       "response_status_text": "OK",
-      "response_body": "{\n  \"success\": true,\n  \"data\": {\n    \"id\": 1,\n    \"first_name\": \"Dock\",\n    \"last_name\": \"Beer\",\n    \"email\": \"test@example.com\",\n    \"full_name\": \"Dock Beer\",\n    \"mobile\": \"2456270449\"\n  },\n  \"token\": \"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoiMSIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNDg5MDM3NzY1LCJleHAiOjE0ODkwNTIxNjV9.pkHeM8IykWfUra6Rc1dQ88QOi8yTeFgfKUMpdyBROVc\"\n}",
+      "response_body": "{\n  \"success\": true,\n  \"data\": {\n    \"id\": 1,\n    \"first_name\": \"Eloy\",\n    \"last_name\": \"Quigley\",\n    \"email\": \"test@example.com\",\n    \"full_name\": \"Eloy Quigley\",\n    \"mobile\": \"5960292378\"\n  },\n  \"token\": \"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoiMSIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNDg5ODY3OTUwLCJleHAiOjE0ODk4ODIzNTB9.OyjLxZyFoDO6rfwlz1KyOrDXuayqmmW8jZNfwZixTME\"\n}",
       "response_headers": {
         "X-Frame-Options": "SAMEORIGIN",
         "X-XSS-Protection": "1; mode=block",
         "X-Content-Type-Options": "nosniff",
-        "Access-Control-Allow-Origin": "*",
-        "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE, OPTIONS",
         "Content-Type": "application/json; charset=utf-8",
-        "ETag": "W/\"c93d3fce59bbb5bf490c29f9314e9ca0\"",
+        "ETag": "W/\"996cd5115887b54d82913f1dddf0ed9a\"",
         "Cache-Control": "max-age=0, private, must-revalidate",
-        "X-Request-Id": "2ab6a82c-6ad4-4389-8fe1-95c5d3da04ae",
-        "X-Runtime": "0.004150",
-        "Content-Length": "320"
+        "X-Request-Id": "4604c2d3-d96e-4f3b-86f3-64fde86e6584",
+        "X-Runtime": "0.007993",
+        "Vary": "Origin",
+        "Content-Length": "326"
       },
       "response_content_type": "application/json; charset=utf-8",
       "curl": null

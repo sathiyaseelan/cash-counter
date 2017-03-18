@@ -1,0 +1,76 @@
+{
+  "resource": "Expenses",
+  "resource_explanation": null,
+  "http_method": "POST",
+  "route": "api/v1/groups/:group_id/expenses",
+  "description": "Create a new expense [valid]",
+  "explanation": "Create a new expense",
+  "parameters": [
+    {
+      "scope": "expense",
+      "required": true,
+      "name": "amount",
+      "description": "Amount of the Expense"
+    },
+    {
+      "scope": "expense",
+      "required": true,
+      "name": "description",
+      "description": "Description for the group"
+    },
+    {
+      "scope": "expense",
+      "required": true,
+      "name": "categories",
+      "description": "List of categories"
+    },
+    {
+      "scope": "expense",
+      "required": true,
+      "name": "paid_by_id",
+      "description": "Id of the user paid"
+    },
+    {
+      "scope": "expense",
+      "required": true,
+      "name": "paid_on",
+      "description": "Paid date"
+    }
+  ],
+  "response_fields": [
+
+  ],
+  "requests": [
+    {
+      "request_method": "POST",
+      "request_path": "api/v1/groups/1/expenses",
+      "request_body": "{\"expense\":{\"amount\":200.5,\"description\":\"Bought meat\",\"categories\":[\"food\",\"grocery\"],\"paid_by_id\":1,\"paid_on\":\"2017-03-19T01:42:28.786+05:30\"}}",
+      "request_headers": {
+        "Content-Type": "application/json",
+        "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoiMSIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNDg5ODY3OTQ4LCJleHAiOjE0ODk4ODIzNDh9.eMp3tYb36MiVjgv9CSPEeLB-rOhin6unQeSuTm0Pfxw",
+        "Host": "example.org",
+        "Cookie": ""
+      },
+      "request_query_parameters": {
+      },
+      "request_content_type": "application/json",
+      "response_status": 201,
+      "response_status_text": "Created",
+      "response_body": "{\n  \"success\": true,\n  \"data\": {\n    \"id\": 1,\n    \"description\": \"Bought meat\",\n    \"amount\": \"200.5\",\n    \"paid_on\": \"2017-03-18T20:12:28.786Z\",\n    \"paid_by_id\": 1,\n    \"paid_by\": \"Gregory Borer\"\n  }\n}",
+      "response_headers": {
+        "X-Frame-Options": "SAMEORIGIN",
+        "X-XSS-Protection": "1; mode=block",
+        "X-Content-Type-Options": "nosniff",
+        "Content-Type": "application/json; charset=utf-8",
+        "ETag": "W/\"1b85e7d0ef0654b96d725ee58f317a73\"",
+        "Cache-Control": "max-age=0, private, must-revalidate",
+        "X-Request-Id": "d3c61d4c-d4e8-43fb-9eef-71b0b3e93c0e",
+        "X-Runtime": "0.057133",
+        "Vary": "Origin",
+        "Content-Length": "155"
+      },
+      "response_content_type": "application/json; charset=utf-8",
+      "curl": null
+    }
+  ]
+}

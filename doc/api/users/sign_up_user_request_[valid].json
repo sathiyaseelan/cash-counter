@@ -44,7 +44,7 @@
     {
       "request_method": "POST",
       "request_path": "api/v1/users",
-      "request_body": "{\"user\":{\"first_name\":\"Kolby\",\"last_name\":\"Schneider\",\"email\":\"magdalena.hoeger@heathcote.info\",\"mobile\":\"6132418032\",\"password\":\"UeAq6tHlZh9bM\"}}",
+      "request_body": "{\"user\":{\"first_name\":\"Curt\",\"last_name\":\"Mayer\",\"email\":\"giuseppe_hilpert@ruecker.biz\",\"mobile\":\"1516462297\",\"password\":\"UzYyQuL5SlL\"}}",
       "request_headers": {
         "Content-Type": "application/json",
         "Host": "example.org",
@@ -55,19 +55,18 @@
       "request_content_type": "application/json",
       "response_status": 201,
       "response_status_text": "Created",
-      "response_body": "{\n  \"success\": true,\n  \"data\": {\n    \"id\": 1,\n    \"first_name\": \"Kolby\",\n    \"last_name\": \"Schneider\",\n    \"email\": \"magdalena.hoeger@heathcote.info\",\n    \"full_name\": \"Kolby Schneider\",\n    \"mobile\": \"6132418032\"\n  },\n  \"token\": \"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoiMSIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNDg5MDM3NzY1LCJleHAiOjE0ODkwNTIxNjV9.pkHeM8IykWfUra6Rc1dQ88QOi8yTeFgfKUMpdyBROVc\"\n}",
+      "response_body": "{\n  \"success\": true,\n  \"data\": {\n    \"id\": 1,\n    \"first_name\": \"Curt\",\n    \"last_name\": \"Mayer\",\n    \"email\": \"giuseppe_hilpert@ruecker.biz\",\n    \"full_name\": \"Curt Mayer\",\n    \"mobile\": \"1516462297\"\n  },\n  \"token\": \"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoiMSIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNDg5ODY3OTQ5LCJleHAiOjE0ODk4ODIzNDl9.KSt97mweTmaVLdJADRhdVFB6el2jO9qk0ray79DrIds\"\n}",
       "response_headers": {
         "X-Frame-Options": "SAMEORIGIN",
         "X-XSS-Protection": "1; mode=block",
         "X-Content-Type-Options": "nosniff",
-        "Access-Control-Allow-Origin": "*",
-        "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE, OPTIONS",
         "Content-Type": "application/json; charset=utf-8",
-        "ETag": "W/\"23a209f65d9ed47d27c59618b19931d8\"",
+        "ETag": "W/\"9526ff8e56bc15f8d5179186ea6b8650\"",
         "Cache-Control": "max-age=0, private, must-revalidate",
-        "X-Request-Id": "4ff4987a-89d8-4010-b472-807072aee19d",
-        "X-Runtime": "0.010312",
-        "Content-Length": "347"
+        "X-Request-Id": "cf693476-56d7-471a-bc2a-b095878e54aa",
+        "X-Runtime": "0.284562",
+        "Vary": "Origin",
+        "Content-Length": "334"
       },
       "response_content_type": "application/json; charset=utf-8",
       "curl": null

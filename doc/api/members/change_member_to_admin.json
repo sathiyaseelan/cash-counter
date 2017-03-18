@@ -18,7 +18,7 @@
       "request_body": null,
       "request_headers": {
         "Content-Type": "application/json",
-        "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoiMSIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNDg5MDM3NzY1LCJleHAiOjE0ODkwNTIxNjV9.pkHeM8IykWfUra6Rc1dQ88QOi8yTeFgfKUMpdyBROVc",
+        "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoiMSIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNDg5ODY3OTQ5LCJleHAiOjE0ODk4ODIzNDl9.KSt97mweTmaVLdJADRhdVFB6el2jO9qk0ray79DrIds",
         "Host": "example.org",
         "Cookie": ""
       },
@@ -27,17 +27,16 @@
       "request_content_type": "application/json",
       "response_status": 500,
       "response_status_text": "Internal Server Error",
-      "response_body": "{\n  \"error\": \"undefined method `update_member' for #<MembersService:0x007fb180f4a630 @current_user=nil>\",\n  \"success\": false\n}",
+      "response_body": "{\n  \"error\": \"undefined method `update_member' for #<MembersService:0x007fd6ecf1d928 @current_user=nil>\",\n  \"success\": false\n}",
       "response_headers": {
         "X-Frame-Options": "SAMEORIGIN",
         "X-XSS-Protection": "1; mode=block",
         "X-Content-Type-Options": "nosniff",
-        "Access-Control-Allow-Origin": "*",
-        "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE, OPTIONS",
         "Content-Type": "application/json; charset=utf-8",
         "Cache-Control": "no-cache",
-        "X-Request-Id": "aa069a43-69b8-44b8-a693-82fd3a1160a7",
-        "X-Runtime": "0.008656",
+        "X-Request-Id": "f0b44204-f70c-41c1-83d4-a2173740f0da",
+        "X-Runtime": "0.007572",
+        "Vary": "Origin",
         "Content-Length": "127"
       },
       "response_content_type": "application/json; charset=utf-8",
