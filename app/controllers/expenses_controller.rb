@@ -10,6 +10,25 @@ class ExpensesController < ApplicationController
       render json: ErrorResponse.new(e.message), status: :internal_server_error
   end
 
+  def index
+    response = ExpensesService.new.get_expenses_for_group(group_id: params[:group_id])
+    if response.success?
+      render json: response, status: :ok
+    else
+      render json: response, status: :not_found
+    end
+    rescue Exception => e
+      render json: ErrorResponse.new(e.message), status: :internal_server_error
+  end
+
+  def history
+  end
+
+  def update
+  end
+
+  def destroy
+  end
 
   private
 

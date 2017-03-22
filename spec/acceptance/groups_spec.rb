@@ -25,7 +25,7 @@ resource "Groups" do
   end
 
   get 'api/v1/groups/:id' do
-    let(:group) { create(:group, members_count: 2) }
+    let(:group) { create(:group, :with_members, :with_admins,  members_count: 2) }
     let(:id) { group.id}
     before { generate_token_and_set_header user }
     example_request 'Get Group information' do
