@@ -17,3 +17,5 @@ This is to keep track the expenses; categorize and calculate the share for every
 * Test driven development
 
 * Schedule & Mail Integration
+
+* Travis Integration done and the build passed
