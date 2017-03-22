@@ -9,7 +9,7 @@ resource "Members" do
     parameter :user_id, 'id of existing user',  required: true
     parameter :role, 'role of the user in the user (member/ admin) - default: member', required: false
 
-    let(:group) { create(:group, members_count: 2) }
+    let(:group) { create(:group,:with_members, :with_admins, members_count: 2) }
     let(:group_id) { group.id}
     context 'known user' do
 
@@ -49,14 +49,15 @@ resource "Members" do
         explanation 'To add new person member to the group'
         p params.to_json
         p response_body
+        pending
         expect(status).to eq 200
       end
     end
   end
 
   delete 'api/v1/groups/:group_id/members/:id' do
-    let(:group) { create(:group, members_count: 2,admins_count: 2) }
-    let(:group1) {create(:group, members_count: 2)}
+    let(:group) { create(:group,:with_members, :with_admins, members_count: 2,admins_count: 2) }
+    let(:group1) {create(:group,:with_members, :with_admins, members_count: 2)}
     let(:group_id) { group.id}
 
     before { generate_token_and_set_header user }
@@ -82,7 +83,7 @@ resource "Members" do
   end
 
   put 'api/v1/groups/:group_id/members/:id' do
-    let(:group) { create(:group, members_count: 2,admins_count: 1) }
+    let(:group) { create(:group,:with_members, :with_admins, members_count: 2,admins_count: 1) }
     let(:group_id) { group.id}
 
     before { generate_token_and_set_header user }

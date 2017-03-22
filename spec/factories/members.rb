@@ -10,8 +10,17 @@
 
 FactoryGirl.define do
   factory :member do
+
     user
     group
-    role :member
+
+    trait :as_member do
+      role :member
+    end
+
+    trait :as_admin do
+      role :admin
+    end
+
   end
 end

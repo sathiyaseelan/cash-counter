@@ -10,17 +10,15 @@
 #  updated_at       :datetime         not null
 #
 
-class Category < ApplicationRecord
+FactoryGirl.define do
 
-  scope :common_categories, ->() { where(belongs_to_group: false) }
+  factory :category do
+    name { Faker::Lorem.word }
+    group_id nil
+    belongs_to_group false
 
-  has_and_belongs_to_many :expenses, join_table: :expenses_categories
-  
-  before_save do
-    if self.group_id.nil?
-      self.belongs_to_group = false
-    else
-      self.belongs_to_group = true
+    factory :group_category do
+      belongs_to_group true
     end
   end
 
